@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+    
+    <nav class="rsc-nav-container">
+  
+  <div class="rsc-nav-logo">
+    <a href="../index.html">
+      <span class="rsc-nav-logo-icon">R</span>
+      <span class="rsc-nav-logo-text">RYAN <span class="rsc-nav-logo-text-green">Sports Club</span></span>
+    </a>
+  </div>
+
+  <div class="rsc-nav-toggle" id="rscNavToggle">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <ul class="rsc-nav-links" id="rscNavLinks">
+    
+    <li class="rsc-nav-item">
+      <a href="../index.html" class="rsc-nav-link rsc-nav-active">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+    </li>
+
+    <li class="rsc-nav-item rsc-nav-dropdown-container">
+      <a href="#" class="rsc-nav-link rsc-nav-dropdown-toggle">
+        <i class="fas fa-info-circle"></i>
+        <span>About Club</span>
+        <i class="fas fa-chevron-down rsc-nav-chevron"></i>
+      </a>
+      <ul class="rsc-nav-dropdown-menu">
+        <li class="rsc-nav-dropdown-item">
+          <a href="athletes.html" class="rsc-nav-dropdown-link"><i class="fas fa-star"></i> Top Athletes</a>
+        </li>
+        <li class="rsc-nav-dropdown-item">
+          <a href="gallery.html" class="rsc-nav-dropdown-link"><i class="fas fa-images"></i> Gallery</a>
+        </li>
+        <li class="rsc-nav-dropdown-item">
+          <a href="feedback.html" class="rsc-nav-dropdown-link"><i class="fas fa-comments"></i> Feedback</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="rsc-nav-item rsc-nav-dropdown-container">
+      <a href="#" class="rsc-nav-link rsc-nav-dropdown-toggle">
+        <i class="fas fa-basketball-ball"></i>
+        <span>Sports</span>
+        <i class="fas fa-chevron-down rsc-nav-chevron"></i>
+      </a>
+      <ul class="rsc-nav-dropdown-menu">
+        <li class="rsc-nav-dropdown-item">
+          <a href="indoor.html" class="rsc-nav-dropdown-link"><i class="fas fa-dumbbell"></i> Indoor Sports</a>
+        </li>
+        <li class="rsc-nav-dropdown-item">
+          <a href="outdoor.html" class="rsc-nav-dropdown-link"><i class="fas fa-futbol"></i> Outdoor Sports</a>
+        </li>
+        <li class="rsc-nav-dropdown-item">
+          <a href="recreation.html" class="rsc-nav-dropdown-link"><i class="fas fa-tree"></i> Recreation</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="rsc-nav-item">
+      <a href="membership.html" class="rsc-nav-link">
+        <i class="fas fa-id-card"></i>
+        <span>Membership</span>
+      </a>
+    </li>
+    
+    <li class="rsc-nav-item">
+      <a href="events.html" class="rsc-nav-link">
+        <i class="fas fa-calendar-alt"></i>
+        <span>Events</span>
+      </a>
+    </li>
+    
+    <li class="rsc-nav-item">
+      <a href="contact.html" class="rsc-nav-link">
+        <i class="fas fa-phone-alt"></i>
+        <span>Contact</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+<!-- Gallery Hero Section -->
+<section class="rsc-gallery-hero">
+    <div class="rsc-gallery-container">
+        <div class="rsc-gallery-hero-badge">
+            <span>📸 Moments Captured</span>
+        </div>
+        <h1 class="rsc-gallery-hero-title">Our Visual Journey</h1>
+        <p class="rsc-gallery-hero-subtitle">
+            Explore a collection of memorable moments, facilities, and champion athletes from Ryan Sports Club.
+        </p>
+    </div>
+</section>
+
+<!-- Gallery Filter & Grid Section -->
+<section class="rsc-gallery-section">
+    <div class="rsc-gallery-container">
+        <div class="rsc-gallery-filter">
+            <button class="rsc-gallery-filter-btn rsc-active" data-filter="all">
+                <i class="fas fa-th-large"></i> All Photos
+            </button>
+            <button class="rsc-gallery-filter-btn" data-filter="facilities">
+                <i class="fas fa-building"></i> Facilities
+            </button>
+            <button class="rsc-gallery-filter-btn" data-filter="events">
+                <i class="fas fa-calendar-star"></i> Events
+            </button>
+            <button class="rsc-gallery-filter-btn" data-filter="athletes">
+                <i class="fas fa-trophy"></i> Athletes
+            </button>
+            <button class="rsc-gallery-filter-btn" data-filter="training">
+                <i class="fas fa-dumbbell"></i> Training
+            </button>
+        </div>
+
+        <!-- Pinterest Style Masonry Grid -->
+        <div class="rsc-gallery-masonry">
+            <!-- Column 1 -->
+            <div class="rsc-masonry-column">
+                <div class="rsc-gallery-card" data-category="facilities">
+                    <div class="rsc-gallery-image">
+                        <img src="../images/Modern Gym.jpg" alt="Modern Gym">
+                        <div class="rsc-gallery-overlay">
+                            <div class="rsc-gallery-content">
+                                <span class="rsc-gallery-title">Modern Gym Facility</span>
+                                <span class="rsc-gallery-category">Facilities</span>
+                                <p class="rsc-gallery-description">State-of-the-art equipment for professional training</p>
+                            </div>
+                            <div class="rsc-gallery-actions">
+                                <button class="rsc-gallery-like">
+                                    <i class="far fa-heart"></i>
+                                    <span>24</span>
+                                </button>
+                                <button class="rsc-gallery-view">
+                                    <i class="far fa-eye"></i>
+                                    <span>View</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rsc-gallery-card" data-category="events">
+                    <div class="rsc-gallery-image">
+                        <img src="../images/Award Ceremony.jpg" alt="Award Ceremony">
+                        <div class="rsc-gallery-overlay">
+                            <div class="rsc-gallery-content">
+                                <span class="rsc-gallery-title">Annual Award Ceremony</span>
+                                <span class="rsc-gallery-category">Events</span>
+                                <p class="rsc-gallery-description">Celebrating our champions' achievements</p>
+                            </div>
+                            <div class="rsc-gallery-actions">
+                                <button class="rsc-gallery-like">
+                                    <i class="far fa-heart"></i>
+                                    <span>42</span>
+                                </button>
+                                <button class="rsc-gallery-view">
+                                    <i class="far fa-eye"></i>
+                                    <span>View</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="rsc-masonry-column">
+                <div class="rsc-gallery-card" data-category="athletes">
+                    <div class="rsc-gallery-image">
+                        <img src="../images/Footballer Action.jpg" alt="Footballer Action">
+                        <div class="rsc-gallery-overlay">
+                            <div class="rsc-gallery-content">
+                                <span class="rsc-gallery-title">Footballer in Action</span>
+                                <span class="rsc-gallery-category">Athletes</span>
+                                <p class="rsc-gallery-description">Professional training for peak performance</p>
+                            </div>
+                            <div class="rsc-gallery-actions">
+                                <button class="rsc-gallery-like">
+                                    <i class="far fa-heart"></i>
+                                    <span>56</span>
+                                </button>
+                                <button class="rsc-gallery-view">
+                                    <i class="far fa-eye"></i>
+                                    <span>View</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rsc-gallery-card" data-category="facilities">
+                    <div class="rsc-gallery-image">
+                        <img src="../images/Swimming Pool.jpg" alt="Swimming Pool">
+                        <div class="rsc-gallery-overlay">
+                            <div class="rsc-gallery-content">
+                                <span class="rsc-gallery-title">Olympic Swimming Pool</span>
+                                <span class="rsc-gallery-category">Facilities</span>
+                                <p class="rsc-gallery-description">Professional-grade swimming facility</p>
+                            </div>
+                            <div class="rsc-gallery-actions">
+                                <button class="rsc-gallery-like">
+                                    <i class="far fa-heart"></i>
+                                    <span>31</span>
+                                </button>
+                                <button class="rsc-gallery-view">
+                                    <i class="far fa-eye"></i>
+                                    <span>View</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="rsc-masonry-column">
+                <div class="rsc-gallery-card" data-category="training">
+                    <div class="rsc-gallery-image">
+                        <img src="../images/Basketball Training.jpg" alt="Basketball Training">
+                        <div class="rsc-gallery-overlay">
+                            <div class="rsc-gallery-content">
+                                <span class="rsc-gallery-title">Basketball Training</span>
+                                <span class="rsc-gallery-category">Training</span>
+                                <p class="rsc-gallery-description">Youth development program sessions</p>
+                            </div>
+                            <div class="rsc-gallery-actions">
+                                <button class="rsc-gallery-like">
+                                    <i class="far fa-heart"></i>
+                                    <span>22</span>
+                                </button>
+                                <button class="rsc-gallery-view">
+                                    <i class="far fa-eye"></i>
+                                    <span>View</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rsc-gallery-card" data-category="athletes">
+                    <div class="rsc-gallery-image">
+                        <img src="../images/Basketball Player.jpg" alt="Basketball Player">
+                        <div class="rsc-gallery-overlay">
+                            <div class="rsc-gallery-content">
+                                <span class="rsc-gallery-title">Focused Basketball Player</span>
+                                <span class="rsc-gallery-category">Athletes</span>
+                                <p class="rsc-gallery-description">Professional athlete during practice</p>
+                            </div>
+                            <div class="rsc-gallery-actions">
+                                <button class="rsc-gallery-like">
+                                    <i class="far fa-heart"></i>
+                                    <span>47</span>
+                                </button>
+                                <button class="rsc-gallery-view">
+                                    <i class="far fa-eye"></i>
+                                    <span>View</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Load More Button -->
+        <div class="rsc-gallery-load-more">
+            <button class="rsc-load-more-btn">
+                <i class="fas fa-sync-alt"></i>
+                Load More Photos
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div id="rscLightbox" class="rsc-lightbox">
+    <span class="rsc-lightbox-close">&times;</span>
+    <div class="rsc-lightbox-content">
+        <img id="rscLightboxImage" src="" alt="">
+        <div class="rsc-lightbox-info">
+            <h3 id="rscLightboxTitle"></h3>
+            <span id="rscLightboxCategory"></span>
+            <p id="rscLightboxDescription"></p>
+        </div>
+    </div>
+    <div class="rsc-lightbox-nav">
+        <button class="rsc-lightbox-prev">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="rsc-lightbox-next">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+</div>
+
+
+<footer class="rsc-main-footer">
+    <div class="rsc-container">
+        <div class="rsc-main-footer-main">
+            <div class="rsc-main-footer-brand">
+                <div class="rsc-main-footer-logo">
+                    <span class="rsc-main-footer-logo-icon">R</span>
+                    <span class="rsc-main-footer-logo-text">RYAN <span class="rsc-main-footer-logo-text-green">Sports Club</span></span>
+                </div>
+                <p class="rsc-main-footer-description">
+                    Your premier destination for fitness, wellness, and community. Join us in achieving your fitness goals.
+                </p>
+                <div class="rsc-main-footer-social-links">
+                    <a href="#" class="rsc-main-footer-social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="rsc-main-footer-social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="rsc-main-footer-social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="rsc-main-footer-social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="rsc-main-footer-links">
+                <h4 class="rsc-main-footer-title">Quick Links</h4>
+                <ul class="rsc-main-footer-list">
+                    <li><a href="../index.html" class="rsc-main-footer-link">Home</a></li>
+                    <li><a href="recreation.html" class="rsc-main-footer-link">About Club</a></li>
+                    <li><a href="membership.html" class="rsc-main-footer-link">Membership</a></li>
+                    <li><a href="events.html" class="rsc-main-footer-link">Events</a></li>
+                    <li><a href="gallery.html" class="rsc-main-footer-link">Gallery</a></li>
+                </ul>
+            </div>
+
+            <div class="rsc-main-footer-links">
+                <h4 class="rsc-main-footer-title">Facilities</h4>
+                <ul class="rsc-main-footer-list">
+                    <li><a href="indoor.html" class="rsc-main-footer-link">Indoor Sports</a></li>
+                    <li><a href="outdoor.html" class="rsc-main-footer-link">Outdoor Sports</a></li>
+                    <li><a href="recreation.html" class="rsc-main-footer-link">Recreation</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="rsc-main-footer-contact">
+                <h4 class="rsc-main-footer-title">Contact Info</h4>
+                <div class="rsc-main-footer-contact-info">
+                    <div class="rsc-main-footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Visit Us</strong>
+                            <span>Pakistan , Karachi City</span>
+                        </div>
+                    </div>
+                    <div class="rsc-main-footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Call Us</strong>
+                            <span>+92 314-1002327</span>
+                        </div>
+                    </div>
+                    <div class="rsc-main-footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email Us</strong>
+                            <span>info@ryansportsclub.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rsc-main-footer-newsletter">
+            <div class="rsc-main-footer-newsletter-content">
+                <div class="rsc-main-footer-newsletter-text">
+                    <h4 class="rsc-main-footer-newsletter-title">Stay Updated</h4>
+                    <p class="rsc-main-footer-newsletter-subtitle">Subscribe to our newsletter for the latest updates.</p>
+                </div>
+                <form class="rsc-main-footer-newsletter-form">
+                    <div class="rsc-main-footer-newsletter-input-group">
+                        <input type="email" placeholder="Enter your email address" class="rsc-main-footer-newsletter-input" required>
+                        <button type="submit" class="rsc-main-footer-btn rsc-main-footer-btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Subscribe
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="rsc-main-footer-bottom">
+            <div class="rsc-main-footer-bottom-content">
+                <div class="rsc-main-footer-copyright">
+                    <p>&copy; <span id="rscFooterCurrentYear"></span> RYAN Sports Club. All rights reserved.</p>
+                </div>
+                <div class="rsc-main-footer-legal">
+                    <a href="#" class="rsc-main-footer-legal-link">Privacy Policy</a>
+                    <a href="#" class="rsc-main-footer-legal-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script type="module" src="../js/script.js"></script>
+</body>
+</html>

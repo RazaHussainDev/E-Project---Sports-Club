@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+    
+    <nav class="rsc-nav-container">
+  
+  <div class="rsc-nav-logo">
+    <a href="../index.html">
+      <span class="rsc-nav-logo-icon">R</span>
+      <span class="rsc-nav-logo-text">RYAN <span class="rsc-nav-logo-text-green">Sports Club</span></span>
+    </a>
+  </div>
+
+  <div class="rsc-nav-toggle" id="rscNavToggle">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <ul class="rsc-nav-links" id="rscNavLinks">
+    
+    <li class="rsc-nav-item">
+      <a href="../index.html" class="rsc-nav-link rsc-nav-active">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+    </li>
+
+    <li class="rsc-nav-item rsc-nav-dropdown-container">
+      <a href="#" class="rsc-nav-link rsc-nav-dropdown-toggle">
+        <i class="fas fa-info-circle"></i>
+        <span>About Club</span>
+        <i class="fas fa-chevron-down rsc-nav-chevron"></i>
+      </a>
+      <ul class="rsc-nav-dropdown-menu">
+        <li class="rsc-nav-dropdown-item">
+          <a href="athletes.html" class="rsc-nav-dropdown-link"><i class="fas fa-star"></i> Top Athletes</a>
+        </li>
+        <li class="rsc-nav-dropdown-item">
+          <a href="gallery.html" class="rsc-nav-dropdown-link"><i class="fas fa-images"></i> Gallery</a>
+        </li>
+        <li class="rsc-nav-dropdown-item">
+          <a href="feedback.html" class="rsc-nav-dropdown-link"><i class="fas fa-comments"></i> Feedback</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="rsc-nav-item rsc-nav-dropdown-container">
+      <a href="#" class="rsc-nav-link rsc-nav-dropdown-toggle">
+        <i class="fas fa-basketball-ball"></i>
+        <span>Sports</span>
+        <i class="fas fa-chevron-down rsc-nav-chevron"></i>
+      </a>
+      <ul class="rsc-nav-dropdown-menu">
+        <li class="rsc-nav-dropdown-item">
+          <a href="indoor.html" class="rsc-nav-dropdown-link"><i class="fas fa-dumbbell"></i> Indoor Sports</a>
+        </li>
+        <li class="rsc-nav-dropdown-item">
+          <a href="outdoor.html" class="rsc-nav-dropdown-link"><i class="fas fa-futbol"></i> Outdoor Sports</a>
+        </li>
+        <li class="rsc-nav-dropdown-item">
+          <a href="recreation.html" class="rsc-nav-dropdown-link"><i class="fas fa-tree"></i> Recreation</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="rsc-nav-item">
+      <a href="membership.html" class="rsc-nav-link">
+        <i class="fas fa-id-card"></i>
+        <span>Membership</span>
+      </a>
+    </li>
+    
+    <li class="rsc-nav-item">
+      <a href="events.html" class="rsc-nav-link">
+        <i class="fas fa-calendar-alt"></i>
+        <span>Events</span>
+      </a>
+    </li>
+    
+    <li class="rsc-nav-item">
+      <a href="contact.html" class="rsc-nav-link">
+        <i class="fas fa-phone-alt"></i>
+        <span>Contact</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<!-- Indoor Sports Hero Section -->
+<section class="rsc-indoor-hero">
+    <div class="rsc-indoor-container">
+        <div class="rsc-indoor-hero-badge">
+            <span>🏀 Indoor Excellence</span>
+        </div>
+        <h1 class="rsc-indoor-hero-title">Indoor <span class="rsc-text-green">Sports Facilities</span></h1>
+        <p class="rsc-indoor-hero-subtitle">
+            Experience world-class indoor sports facilities available year-round, rain or shine.
+        </p>
+        <div class="rsc-indoor-stats">
+            <div class="rsc-indoor-stat">
+                <div class="rsc-indoor-stat-number">12+</div>
+                <div class="rsc-indoor-stat-label">Sports Available</div>
+            </div>
+            <div class="rsc-indoor-stat">
+                <div class="rsc-indoor-stat-number">24/7</div>
+                <div class="rsc-indoor-stat-label">Air Conditioning</div>
+            </div>
+            <div class="rsc-indoor-stat">
+                <div class="rsc-indoor-stat-number">Pro</div>
+                <div class="rsc-indoor-stat-label">Equipment</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Navigation -->
+<section class="rsc-indoor-nav">
+    <div class="rsc-indoor-container">
+        <div class="rsc-indoor-quick-nav">
+            <a href="#gymnasium" class="rsc-indoor-nav-item">
+                <i class="fas fa-basketball-ball"></i>
+                <span>Gymnasium</span>
+            </a>
+            <a href="#squash" class="rsc-indoor-nav-item">
+                <i class="fas fa-table-tennis-paddle-ball"></i>
+                <span>Squash</span>
+            </a>
+            <a href="#table-tennis" class="rsc-indoor-nav-item">
+                <i class="fas fa-table-tennis"></i>
+                <span>Table Tennis</span>
+            </a>
+            <a href="#yoga" class="rsc-indoor-nav-item">
+                <i class="fas fa-spa"></i>
+                <span>Yoga Studio</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Indoor Sports List Section -->
+<section class="rsc-indoor-list-section">
+    <div class="rsc-indoor-container">
+        <div class="rsc-indoor-list">
+
+            <!-- Gymnasium -->
+            <div class="rsc-sport-card" id="gymnasium">
+                <div class="rsc-sport-card-image">
+                    <img src="../images/Multi-Sport Gymnasium.jpg" alt="Main Gymnasium">
+                    <div class="rsc-sport-card-overlay">
+                        <span class="rsc-sport-card-badge">Featured Facility</span>
+                        <div class="rsc-sport-card-actions">
+                            <button class="rsc-sport-action-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="rsc-sport-action-btn">
+                                <i class="far fa-share-square"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rsc-sport-card-content">
+                    <div class="rsc-sport-card-header">
+                        <h3>Multi-Sport Gymnasium</h3>
+                        <div class="rsc-sport-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9 (128 reviews)</span>
+                        </div>
+                    </div>
+                    <p class="rsc-sport-card-description">
+                        Our flagship indoor arena features professional-grade maple wood flooring, perfect for basketball, volleyball, and badminton. Fully air-conditioned with high-visibility lighting and professional sound system.
+                    </p>
+                    <div class="rsc-sport-card-details">
+                        <div class="rsc-sport-detail">
+                            <i class="fas fa-ruler-combined"></i>
+                            <span>Court Size: 40x20 meters</span>
+                        </div>
+                        <div class="rsc-sport-detail">
+                            <i class="fas fa-users"></i>
+                            <span>Capacity: 100+ spectators</span>
+                        </div>
+                        <div class="rsc-sport-detail">
+                            <i class="fas fa-clock"></i>
+                            <span>Peak Hours: 6PM-9PM</span>
+                        </div>
+                    </div>
+                    <ul class="rsc-sport-card-features">
+                        <li><i class="fas fa-check"></i> 4 Professional Badminton Courts</li>
+                        <li><i class="fas fa-check"></i> Full Basketball & Volleyball Court</li>
+                        <li><i class="fas fa-check"></i> High-Quality Maple Wood Flooring</li>
+                        <li><i class="fas fa-check"></i> Professional Lighting System</li>
+                    </ul>
+                    <div class="rsc-sport-card-footer">
+                        <div class="rsc-sport-pricing">
+                            <span class="rsc-sport-price">$25/hour</span>
+                            <span class="rsc-sport-discount">Members: $15/hour</span>
+                        </div>
+                        <div class="rsc-sport-card-buttons">
+                            <a href="contact.html" class="rsc-btn rsc-btn-primary">
+                                <i class="fas fa-calendar-check"></i>
+                                Book Now
+                            </a>
+                            <button class="rsc-btn rsc-btn-secondary rsc-tour-btn">
+                                <i class="fas fa-video"></i>
+                                Virtual Tour
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Squash Courts -->
+            <div class="rsc-sport-card" id="squash">
+                <div class="rsc-sport-card-image">
+                    <img src="../images/Professional Squash Courts.jpg" alt="Squash Courts">
+                    <div class="rsc-sport-card-overlay">
+                        <span class="rsc-sport-card-badge">High Intensity</span>
+                        <div class="rsc-sport-card-actions">
+                            <button class="rsc-sport-action-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="rsc-sport-action-btn">
+                                <i class="far fa-share-square"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rsc-sport-card-content">
+                    <div class="rsc-sport-card-header">
+                        <h3>Professional Squash Courts</h3>
+                        <div class="rsc-sport-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8 (96 reviews)</span>
+                        </div>
+                    </div>
+                    <p class="rsc-sport-card-description">
+                        Get your heart racing in our 4 international-standard, glass-back squash courts. The vibrant atmosphere and perfect wall-bounce will elevate your game to professional levels.
+                    </p>
+                    <div class="rsc-sport-card-details">
+                        <div class="rsc-sport-detail">
+                            <i class="fas fa-vector-square"></i>
+                            <span>Court Type: Glass-Back</span>
+                        </div>
+                        <div class="rsc-sport-detail">
+                            <i class="fas fa-temperature-low"></i>
+                            <span>Air-Conditioned: 18°C</span>
+                        </div>
+                        <div class="rsc-sport-detail">
+                            <i class="fas fa-trophy"></i>
+                            <span>Tournament Ready</span>
+                        </div>
+                    </div>
+                    <ul class="rsc-sport-card-features">
+                        <li><i class="fas fa-check"></i> 4 International Standard Courts</li>
+                        <li><i class="fas fa-check"></i> Professional Glass-Back Walls</li>
+                        <li><i class="fas fa-check"></i> Championship Lighting</li>
+                        <li><i class="fas fa-check"></i> Racket & Ball Rentals</li>
+                    </ul>
+                    <div class="rsc-sport-card-footer">
+                        <div class="rsc-sport-pricing">
+                            <span class="rsc-sport-price">$20/hour</span>
+                            <span class="rsc-sport-discount">Members: $12/hour</span>
+                        </div>
+                        <div class="rsc-sport-card-buttons">
+                            <a href="contact.html" class="rsc-btn rsc-btn-primary">
+                                <i class="fas fa-calendar-check"></i>
+                                Book Court
+                            </a>
+                            <button class="rsc-btn rsc-btn-secondary rsc-tour-btn">
+                                <i class="fas fa-video"></i>
+                                Virtual Tour
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table Tennis -->
+            <div class="rsc-sport-card" id="table-tennis">
+                <div class="rsc-sport-card-image">
+                    <img src="../images/Table Tennis Arena.jpg" alt="Table Tennis">
+                    <div class="rsc-sport-card-overlay">
+                        <span class="rsc-sport-card-badge">Fast-Paced</span>
+                        <div class="rsc-sport-card-actions">
+                            <button class="rsc-sport-action-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="rsc-sport-action-btn">
+                                <i class="far fa-share-square"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rsc-sport-card-content">
+                    <div class="rsc-sport-card-header">
+                        <h3>Table Tennis Arena</h3>
+                        <div class="rsc-sport-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7 (84 reviews)</span>
+                        </div>
+                    </div>
+                    <p class="rsc-sport-card-description">
+                        Enjoy fast-paced action in our dedicated table tennis zone. We feature 8 professional ITTF-approved tables with anti-glare lighting, perfect for both casual play and competitive tournaments.
+                    </p>
+                    <div class="rsc-sport-card-details">
+                        <div class="rsc-sport-detail">
+                            <i class="fas fa-table"></i>
+                            <span>8 Professional Tables</span>
+                        </div>
+                        <div class="rsc-sport-detail">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Anti-Glare Lighting</span>
+                        </div>
+                        <div class="rsc-sport-detail">
+                            <i class="fas fa-user-graduate"></i>
+                            <span>Coaching Available</span>
+                        </div>
+                    </div>
+                    <ul class="rsc-sport-card-features">
+                        <li><i class="fas fa-check"></i> 8 ITTF-Approved Tables</li>
+                        <li><i class="fas fa-check"></i> Professional Rubber Flooring</li>
+                        <li><i class="fas fa-check"></i> Tournament Scoring System</li>
+                        <li><i class="fas fa-check"></i> Paddle & Ball Rentals</li>
+                    </ul>
+                    <div class="rsc-sport-card-footer">
+                        <div class="rsc-sport-pricing">
+                            <span class="rsc-sport-price">$15/hour</span>
+                            <span class="rsc-sport-discount">Members: $8/hour</span>
+                        </div>
+                        <div class="rsc-sport-card-buttons">
+                            <a href="contact.html" class="rsc-btn rsc-btn-primary">
+                                <i class="fas fa-calendar-check"></i>
+                                Book Table
+                            </a>
+                            <button class="rsc-btn rsc-btn-secondary rsc-tour-btn">
+                                <i class="fas fa-video"></i>
+                                Virtual Tour
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Yoga Studio -->
+            <div class="rsc-sport-card" id="yoga">
+                <div class="rsc-sport-card-image">
+                    <img src="../images/Yoga & Wellness Studio.jpg" alt="Yoga Studio">
+                    <div class="rsc-sport-card-overlay">
+                        <span class="rsc-sport-card-badge">Mind & Body</span>
+                        <div class="rsc-sport-card-actions">
+                            <button class="rsc-sport-action-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="rsc-sport-action-btn">
+                                <i class="far fa-share-square"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rsc-sport-card-content">
+                    <div class="rsc-sport-card-header">
+                        <h3>Yoga & Wellness Studio</h3>
+                        <div class="rsc-sport-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9 (156 reviews)</span>
+                        </div>
+                    </div>
+                    <p class="rsc-sport-card-description">
+                        Find your inner peace in our serene yoga studio. A quiet, dedicated space designed for meditation, pilates, and yoga classes, featuring natural lighting and calming ambiance.
+                    </p>
+                    <div class="rsc-sport-card-details">
+                        <div class="rsc-sport-detail">
+                            <i class="fas fa-users"></i>
+                            <span>Capacity: 25 people</span>
+                        </div>
+                        <div class="rsc-sport-detail">
+                            <i class="fas fa-music"></i>
+                            <span>Ambient Sound System</span>
+                        </div>
+                        <div class="rsc-sport-detail">
+                            <i class="fas fa-sun"></i>
+                            <span>Natural Lighting</span>
+                        </div>
+                    </div>
+                    <ul class="rsc-sport-card-features">
+                        <li><i class="fas fa-check"></i> Daily Yoga & Pilates Classes</li>
+                        <li><i class="fas fa-check"></i> Professional Sound-proofing</li>
+                        <li><i class="fas fa-check"></i> Premium Yoga Mats & Props</li>
+                        <li><i class="fas fa-check"></i> Certified Instructors</li>
+                    </ul>
+                    <div class="rsc-sport-card-footer">
+                        <div class="rsc-sport-pricing">
+                            <span class="rsc-sport-price">$18/class</span>
+                            <span class="rsc-sport-discount">Members: Free</span>
+                        </div>
+                        <div class="rsc-sport-card-buttons">
+                            <a href="membership.html" class="rsc-btn rsc-btn-primary">
+                                <i class="fas fa-calendar-alt"></i>
+                                View Schedule
+                            </a>
+                            <button class="rsc-btn rsc-btn-secondary rsc-tour-btn">
+                                <i class="fas fa-video"></i>
+                                Virtual Tour
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Facilities Overview -->
+<section class="rsc-indoor-overview">
+    <div class="rsc-indoor-container">
+        <div class="rsc-overview-grid">
+            <div class="rsc-overview-card">
+                <i class="fas fa-clock"></i>
+                <h3>Flexible Timing</h3>
+                <p>Open from 6 AM to 11 PM, 7 days a week</p>
+            </div>
+            <div class="rsc-overview-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Safety First</h3>
+                <p>Regular equipment maintenance & safety checks</p>
+            </div>
+            <div class="rsc-overview-card">
+                <i class="fas fa-concierge-bell"></i>
+                <h3>Premium Service</h3>
+                <p>Professional staff & equipment assistance</p>
+            </div>
+            <div class="rsc-overview-card">
+                <i class="fas fa-users"></i>
+                <h3>Community</h3>
+                <p>Join leagues and meet fellow sports enthusiasts</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="rsc-indoor-cta">
+    <div class="rsc-indoor-container">
+        <div class="rsc-indoor-cta-content">
+            <h2 class="rsc-indoor-cta-title">Ready to Play Indoors?</h2>
+            <p class="rsc-indoor-cta-subtitle">
+                Join RYAN Sports Club today and get unlimited access to all our premium indoor facilities with special member pricing.
+            </p>
+            <div class="rsc-indoor-cta-buttons">
+                <a href="membership.html" class="rsc-btn rsc-btn-primary rsc-cta-large">
+                    <i class="fas fa-crown"></i>
+                    Become a Member
+                </a>
+  
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="rsc-main-footer">
+    <div class="rsc-container">
+        <div class="rsc-main-footer-main">
+            <div class="rsc-main-footer-brand">
+                <div class="rsc-main-footer-logo">
+                    <span class="rsc-main-footer-logo-icon">R</span>
+                    <span class="rsc-main-footer-logo-text">RYAN <span class="rsc-main-footer-logo-text-green">Sports Club</span></span>
+                </div>
+                <p class="rsc-main-footer-description">
+                    Your premier destination for fitness, wellness, and community. Join us in achieving your fitness goals.
+                </p>
+                <div class="rsc-main-footer-social-links">
+                    <a href="#" class="rsc-main-footer-social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="rsc-main-footer-social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="rsc-main-footer-social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="rsc-main-footer-social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="rsc-main-footer-links">
+                <h4 class="rsc-main-footer-title">Quick Links</h4>
+                <ul class="rsc-main-footer-list">
+                    <li><a href="../index.html" class="rsc-main-footer-link">Home</a></li>
+                    <li><a href="recreation.html" class="rsc-main-footer-link">About Club</a></li>
+                    <li><a href="membership.html" class="rsc-main-footer-link">Membership</a></li>
+                    <li><a href="events.html" class="rsc-main-footer-link">Events</a></li>
+                    <li><a href="gallery.html" class="rsc-main-footer-link">Gallery</a></li>
+                </ul>
+            </div>
+
+            <div class="rsc-main-footer-links">
+                <h4 class="rsc-main-footer-title">Facilities</h4>
+                <ul class="rsc-main-footer-list">
+                    <li><a href="indoor.html" class="rsc-main-footer-link">Indoor Sports</a></li>
+                    <li><a href="outdoor.html" class="rsc-main-footer-link">Outdoor Sports</a></li>
+                    <li><a href="recreation.html" class="rsc-main-footer-link">Recreation</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="rsc-main-footer-contact">
+                <h4 class="rsc-main-footer-title">Contact Info</h4>
+                <div class="rsc-main-footer-contact-info">
+                    <div class="rsc-main-footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Visit Us</strong>
+                            <span>Pakistan , Karachi City</span>
+                        </div>
+                    </div>
+                    <div class="rsc-main-footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Call Us</strong>
+                            <span>+92 314-1002327</span>
+                        </div>
+                    </div>
+                    <div class="rsc-main-footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email Us</strong>
+                            <span>info@ryansportsclub.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rsc-main-footer-newsletter">
+            <div class="rsc-main-footer-newsletter-content">
+                <div class="rsc-main-footer-newsletter-text">
+                    <h4 class="rsc-main-footer-newsletter-title">Stay Updated</h4>
+                    <p class="rsc-main-footer-newsletter-subtitle">Subscribe to our newsletter for the latest updates.</p>
+                </div>
+                <form class="rsc-main-footer-newsletter-form">
+                    <div class="rsc-main-footer-newsletter-input-group">
+                        <input type="email" placeholder="Enter your email address" class="rsc-main-footer-newsletter-input" required>
+                        <button type="submit" class="rsc-main-footer-btn rsc-main-footer-btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Subscribe
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="rsc-main-footer-bottom">
+            <div class="rsc-main-footer-bottom-content">
+                <div class="rsc-main-footer-copyright">
+                    <p>&copy; <span id="rscFooterCurrentYear"></span> RYAN Sports Club. All rights reserved.</p>
+                </div>
+                <div class="rsc-main-footer-legal">
+                    <a href="#" class="rsc-main-footer-legal-link">Privacy Policy</a>
+                    <a href="#" class="rsc-main-footer-legal-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <script type="module" src="../js/script.js"></script>
+</body>
+</html>

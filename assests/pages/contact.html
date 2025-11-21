@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+    
+    <nav class="rsc-nav-container">
+  
+  <div class="rsc-nav-logo">
+    <a href="../index.html">
+      <span class="rsc-nav-logo-icon">R</span>
+      <span class="rsc-nav-logo-text">RYAN <span class="rsc-nav-logo-text-green">Sports Club</span></span>
+    </a>
+  </div>
+
+  <div class="rsc-nav-toggle" id="rscNavToggle">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <ul class="rsc-nav-links" id="rscNavLinks">
+    
+    <li class="rsc-nav-item">
+      <a href="../index.html" class="rsc-nav-link rsc-nav-active">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+    </li>
+
+    <li class="rsc-nav-item rsc-nav-dropdown-container">
+      <a href="#" class="rsc-nav-link rsc-nav-dropdown-toggle">
+        <i class="fas fa-info-circle"></i>
+        <span>About Club</span>
+        <i class="fas fa-chevron-down rsc-nav-chevron"></i>
+      </a>
+      <ul class="rsc-nav-dropdown-menu">
+        <li class="rsc-nav-dropdown-item">
+          <a href="athletes.html" class="rsc-nav-dropdown-link"><i class="fas fa-star"></i> Top Athletes</a>
+        </li>
+        <li class="rsc-nav-dropdown-item">
+          <a href="gallery.html" class="rsc-nav-dropdown-link"><i class="fas fa-images"></i> Gallery</a>
+        </li>
+        <li class="rsc-nav-dropdown-item">
+          <a href="feedback.html" class="rsc-nav-dropdown-link"><i class="fas fa-comments"></i> Feedback</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="rsc-nav-item rsc-nav-dropdown-container">
+      <a href="#" class="rsc-nav-link rsc-nav-dropdown-toggle">
+        <i class="fas fa-basketball-ball"></i>
+        <span>Sports</span>
+        <i class="fas fa-chevron-down rsc-nav-chevron"></i>
+      </a>
+      <ul class="rsc-nav-dropdown-menu">
+        <li class="rsc-nav-dropdown-item">
+          <a href="indoor.html" class="rsc-nav-dropdown-link"><i class="fas fa-dumbbell"></i> Indoor Sports</a>
+        </li>
+        <li class="rsc-nav-dropdown-item">
+          <a href="outdoor.html" class="rsc-nav-dropdown-link"><i class="fas fa-futbol"></i> Outdoor Sports</a>
+        </li>
+        <li class="rsc-nav-dropdown-item">
+          <a href="recreation.html" class="rsc-nav-dropdown-link"><i class="fas fa-tree"></i> Recreation</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="rsc-nav-item">
+      <a href="membership.html" class="rsc-nav-link">
+        <i class="fas fa-id-card"></i>
+        <span>Membership</span>
+      </a>
+    </li>
+    
+    <li class="rsc-nav-item">
+      <a href="events.html" class="rsc-nav-link">
+        <i class="fas fa-calendar-alt"></i>
+        <span>Events</span>
+      </a>
+    </li>
+    
+    <li class="rsc-nav-item">
+      <a href="contact.html" class="rsc-nav-link">
+        <i class="fas fa-phone-alt"></i>
+        <span>Contact</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+  <section class="rsc-membership-hero">
+    <div class="rsc-container">
+        <h1 class="rsc-page-title">Get In <span class="rsc-text-green">Touch</span></h1>
+        <p class="rsc-page-subtitle">We'd love to hear from you. Whether you have a question about plans, facilities, or just want to say hello, our team is ready to help.</p>
+    </div>
+</section>
+
+<section class="rsc-contact-section">
+    <div class="rsc-container">
+        <div class="rsc-contact-grid">
+            
+            <div class="rsc-contact-form-wrapper">
+                <div class="rsc-feedback-card" id="rscContactFormCard"> <form id="rscContactForm" class="rsc-form">
+                        <h2 class="rsc-form-title">Send Us a Message</h2>
+                        
+                        <div class="rsc-form-group">
+                            <label for="contact_name">Full Name</label>
+                            <input type="text" id="contact_name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div class="rsc-form-group">
+                            <label for="contact_email">Email Address</label>
+                            <input type="email" id="contact_email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        
+                        <div class="rsc-form-group">
+                            <label for="contact_subject">Subject</label>
+                            <input type="text" id="contact_subject" name="subject" placeholder="What is this about?" required>
+                        </div>
+                        
+                        <div class="rsc-form-group">
+                            <label for="contact_message">Your Message</label>
+                            <textarea id="contact_message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        
+                        <div class="rsc-form-group">
+                            <button type="submit" class="rsc-btn rsc-btn-primary" id="rscContactSubmitBtn">
+                                Send Message
+                                <i class="fas fa-paper-plane rsc-flying-icon" id="rscContactFlyingIcon"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="rsc-feedback-card" id="rscContactSuccessCard" style="display: none;">
+                    <div class="rsc-success-content">
+                        <i class="fas fa-check-circle rsc-success-icon"></i>
+                        <h2 class="rsc-form-title">Message Sent!</h2>
+                        <p>Thank you for reaching out. A member of our team will get back to you shortly.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rsc-contact-info-wrapper">
+                
+                <div class="rsc-info-card">
+                    <div class="rsc-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="rsc-info-text">
+                        <h3>Our Location</h3>
+                        <p>Karachi</p>
+                    </div>
+                </div>
+                
+                <div class="rsc-info-card">
+                    <div class="rsc-info-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="rsc-info-text">
+                        <h3>Email Us</h3>
+                        <p>info@ryansportsclub.com</p>
+                    </div>
+                </div>
+
+                <div class="rsc-info-card">
+                    <div class="rsc-info-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div class="rsc-info-text">
+                        <h3>Call Us</h3>
+                        <p>+92 314 1002327</p>
+                    </div>
+                </div>
+                
+                <div class="rsc-contact-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.063341350724!2d67.030458675127!3d24.8617079779287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e6b156561fd%3A0x95c7c34870c64a02!2sMazar-e-Quaid!5e0!3m2!1sen!2s!4v1731878888000!5m2!1sen!2s" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="rsc-main-footer">
+    <div class="rsc-container">
+        <div class="rsc-main-footer-main">
+            <div class="rsc-main-footer-brand">
+                <div class="rsc-main-footer-logo">
+                    <span class="rsc-main-footer-logo-icon">R</span>
+                    <span class="rsc-main-footer-logo-text">RYAN <span class="rsc-main-footer-logo-text-green">Sports Club</span></span>
+                </div>
+                <p class="rsc-main-footer-description">
+                    Your premier destination for fitness, wellness, and community. Join us in achieving your fitness goals.
+                </p>
+                <div class="rsc-main-footer-social-links">
+                    <a href="#" class="rsc-main-footer-social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="rsc-main-footer-social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="rsc-main-footer-social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="rsc-main-footer-social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="rsc-main-footer-links">
+                <h4 class="rsc-main-footer-title">Quick Links</h4>
+                <ul class="rsc-main-footer-list">
+                    <li><a href="../index.html" class="rsc-main-footer-link">Home</a></li>
+                    <li><a href="recreation.html" class="rsc-main-footer-link">About Club</a></li>
+                    <li><a href="membership.html" class="rsc-main-footer-link">Membership</a></li>
+                    <li><a href="events.html" class="rsc-main-footer-link">Events</a></li>
+                    <li><a href="gallery.html" class="rsc-main-footer-link">Gallery</a></li>
+                </ul>
+            </div>
+
+            <div class="rsc-main-footer-links">
+                <h4 class="rsc-main-footer-title">Facilities</h4>
+                <ul class="rsc-main-footer-list">
+                    <li><a href="indoor.html" class="rsc-main-footer-link">Indoor Sports</a></li>
+                    <li><a href="outdoor.html" class="rsc-main-footer-link">Outdoor Sports</a></li>
+                    <li><a href="recreation.html" class="rsc-main-footer-link">Recreation</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="rsc-main-footer-contact">
+                <h4 class="rsc-main-footer-title">Contact Info</h4>
+                <div class="rsc-main-footer-contact-info">
+                    <div class="rsc-main-footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Visit Us</strong>
+                            <span>Pakistan , Karachi City</span>
+                        </div>
+                    </div>
+                    <div class="rsc-main-footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Call Us</strong>
+                            <span>+92 314-1002327</span>
+                        </div>
+                    </div>
+                    <div class="rsc-main-footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email Us</strong>
+                            <span>info@ryansportsclub.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rsc-main-footer-newsletter">
+            <div class="rsc-main-footer-newsletter-content">
+                <div class="rsc-main-footer-newsletter-text">
+                    <h4 class="rsc-main-footer-newsletter-title">Stay Updated</h4>
+                    <p class="rsc-main-footer-newsletter-subtitle">Subscribe to our newsletter for the latest updates.</p>
+                </div>
+                <form class="rsc-main-footer-newsletter-form">
+                    <div class="rsc-main-footer-newsletter-input-group">
+                        <input type="email" placeholder="Enter your email address" class="rsc-main-footer-newsletter-input" required>
+                        <button type="submit" class="rsc-main-footer-btn rsc-main-footer-btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Subscribe
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="rsc-main-footer-bottom">
+            <div class="rsc-main-footer-bottom-content">
+                <div class="rsc-main-footer-copyright">
+                    <p>&copy; <span id="rscFooterCurrentYear"></span> RYAN Sports Club. All rights reserved.</p>
+                </div>
+                <div class="rsc-main-footer-legal">
+                    <a href="#" class="rsc-main-footer-legal-link">Privacy Policy</a>
+                    <a href="#" class="rsc-main-footer-legal-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script type="module" src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+    
+    <nav class="rsc-nav-container">
+  
+  <div class="rsc-nav-logo">
+    <a href="../index.html">
+      <span class="rsc-nav-logo-icon">R</span>
+      <span class="rsc-nav-logo-text">RYAN <span class="rsc-nav-logo-text-green">Sports Club</span></span>
+    </a>
+  </div>
+
+  <div class="rsc-nav-toggle" id="rscNavToggle">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <ul class="rsc-nav-links" id="rscNavLinks">
+    
+    <li class="rsc-nav-item">
+      <a href="../index.html" class="rsc-nav-link rsc-nav-active">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+    </li>
+
+    <li class="rsc-nav-item rsc-nav-dropdown-container">
+      <a href="#" class="rsc-nav-link rsc-nav-dropdown-toggle">
+        <i class="fas fa-info-circle"></i>
+        <span>About Club</span>
+        <i class="fas fa-chevron-down rsc-nav-chevron"></i>
+      </a>
+      <ul class="rsc-nav-dropdown-menu">
+        <li class="rsc-nav-dropdown-item">
+          <a href="athletes.html" class="rsc-nav-dropdown-link"><i class="fas fa-star"></i> Top Athletes</a>
+        </li>
+        <li class="rsc-nav-dropdown-item">
+          <a href="gallery.html" class="rsc-nav-dropdown-link"><i class="fas fa-images"></i> Gallery</a>
+        </li>
+        <li class="rsc-nav-dropdown-item">
+          <a href="feedback.html" class="rsc-nav-dropdown-link"><i class="fas fa-comments"></i> Feedback</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="rsc-nav-item rsc-nav-dropdown-container">
+      <a href="#" class="rsc-nav-link rsc-nav-dropdown-toggle">
+        <i class="fas fa-basketball-ball"></i>
+        <span>Sports</span>
+        <i class="fas fa-chevron-down rsc-nav-chevron"></i>
+      </a>
+      <ul class="rsc-nav-dropdown-menu">
+        <li class="rsc-nav-dropdown-item">
+          <a href="indoor.html" class="rsc-nav-dropdown-link"><i class="fas fa-dumbbell"></i> Indoor Sports</a>
+        </li>
+        <li class="rsc-nav-dropdown-item">
+          <a href="outdoor.html" class="rsc-nav-dropdown-link"><i class="fas fa-futbol"></i> Outdoor Sports</a>
+        </li>
+        <li class="rsc-nav-dropdown-item">
+          <a href="recreation.html" class="rsc-nav-dropdown-link"><i class="fas fa-tree"></i> Recreation</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="rsc-nav-item">
+      <a href="membership.html" class="rsc-nav-link">
+        <i class="fas fa-id-card"></i>
+        <span>Membership</span>
+      </a>
+    </li>
+    
+    <li class="rsc-nav-item">
+      <a href="events.html" class="rsc-nav-link">
+        <i class="fas fa-calendar-alt"></i>
+        <span>Events</span>
+      </a>
+    </li>
+    
+    <li class="rsc-nav-item">
+      <a href="contact.html" class="rsc-nav-link">
+        <i class="fas fa-phone-alt"></i>
+        <span>Contact</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+  <section class="rsc-membership-hero">
+    <div class="rsc-container">
+        <h1 class="rsc-page-title">Upcoming <span class="rsc-text-green">Events</span></h1>
+        <p class="rsc-page-subtitle">Check out our schedule for upcoming competitions, workshops, and social gatherings.</p>
+    </div>
+</section>
+
+<section class="rsc-event-featured">
+    <div class="rsc-container">
+        <div class="rsc-event-featured-card">
+            <div class="rsc-event-featured-image">
+                <img src="../images/Summer Championship.png" alt="Summer Championship">
+            </div>
+            
+            <div class="rsc-event-featured-content">
+                <span class="rsc-spotlight-badge" style="background: var(--accent); color: var(--dark);">Don't Miss Out</span>
+                <h2 class="rsc-spotlight-name">Annual Summer Championship</h2>
+                <p class="rsc-spotlight-bio">
+                    Join us for our biggest event of the year! Watch our top athletes compete in Tennis, Swimming, and Athletics. Food, music, and fun for the whole family.
+                </p>
+                
+                <div class="rsc-countdown-timer" id="rscCountdown">
+                    <div class="rsc-countdown-item">
+                        <span id="countdown-days">00</span>
+                        <label>Days</label>
+                    </div>
+                    <div class="rsc-countdown-item">
+                        <span id="countdown-hours">00</span>
+                        <label>Hours</label>
+                    </div>
+                    <div class="rsc-countdown-item">
+                        <span id="countdown-minutes">00</span>
+                        <label>Minutes</label>
+                    </div>
+                    <div class="rsc-countdown-item">
+                        <span id="countdown-seconds">00</span>
+                        <label>Seconds</label>
+                    </div>
+                </div>
+                
+                <a href="membership.html" class="rsc-btn rsc-btn-primary">Register Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="rsc-event-list-section">
+    <div class="rsc-container">
+        
+        <div class="rsc-gallery-filter"> <button class="rsc-gallery-filter-btn rsc-active" data-filter="all">
+                <i class="fas fa-calendar-alt"></i> All Events
+            </button>
+            <button class="rsc-gallery-filter-btn" data-filter="competition">
+                <i class="fas fa-trophy"></i> Competitions
+            </button>
+            <button class="rsc-gallery-filter-btn" data-filter="workshop">
+                <i class="fas fa-chalkboard-teacher"></i> Workshops
+            </button>
+            <button class="rsc-gallery-filter-btn" data-filter="social">
+                <i class="fas fa-users"></i> Social
+            </button>
+        </div>
+
+        <div class="rsc-event-list">
+            
+            <div class="rsc-event-item" data-category="competition">
+                <div class="rsc-event-date">
+                    <span class="rsc-date-day">25</span>
+                    <span class="rsc-date-month">NOV</span>
+                </div>
+                <div class="rsc-event-details">
+                    <span class="rsc-event-category">Competition</span>
+                    <h3>Club Tennis Tournament (Singles)</h3>
+                    <p>Showcase your skills in our annual singles tennis championship. Open to all members.</p>
+                </div>
+                <div class="rsc-event-action">
+                    <a href="#" class="rsc-btn rsc-btn-secondary">Details</a>
+                </div>
+            </div>
+            
+            <div class="rsc-event-item" data-category="workshop">
+                <div class="rsc-event-date">
+                    <span class="rsc-date-day">28</span>
+                    <span class="rsc-date-month">NOV</span>
+                </div>
+                <div class="rsc-event-details">
+                    <span class="rsc-event-category">Workshop</span>
+                    <h3>Yoga & Mindfulness Workshop</h3>
+                    <p>Join our expert instructors for a 2-hour session on meditation and advanced yoga postures.</p>
+                </div>
+                <div class="rsc-event-action">
+                    <a href="membership.html" class="rsc-btn rsc-btn-secondary">Book Slot</a>
+                </div>
+            </div>
+
+            <div class="rsc-event-item" data-category="social">
+                <div class="rsc-event-date">
+                    <span class="rsc-date-day">05</span>
+                    <span class="rsc-date-month">DEC</span>
+                </div>
+                <div class="rsc-event-details">
+                    <span class="rsc-event-category">Social</span>
+                    <h3>Member's Night BBQ</h3>
+                    <p>A fun evening for all members and their families. Enjoy live music, great food, and community.</p>
+                </div>
+                <div class="rsc-event-action">
+                    <a href="#" class="rsc-btn rsc-btn-secondary">RSVP</a>
+                </div>
+            </div>
+            
+            <div class="rsc-event-item" data-category="competition">
+                <div class="rsc-event-date">
+                    <span class="rsc-date-day">12</span>
+                    <span class="rsc-date-month">DEC</span>
+                </div>
+                <div class="rsc-event-details">
+                    <span class="rsc-event-category">Competition</span>
+                    <h3>Junior Swim Meet</h3>
+                    <p>A friendly swimming competition for our members under 16. All skill levels are welcome!</p>
+                </div>
+                <div class="rsc-event-action">
+                    <a href="membership.html" class="rsc-btn rsc-btn-secondary">Register Child</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<footer class="rsc-main-footer">
+    <div class="rsc-container">
+        <div class="rsc-main-footer-main">
+            <div class="rsc-main-footer-brand">
+                <div class="rsc-main-footer-logo">
+                    <span class="rsc-main-footer-logo-icon">R</span>
+                    <span class="rsc-main-footer-logo-text">RYAN <span class="rsc-main-footer-logo-text-green">Sports Club</span></span>
+                </div>
+                <p class="rsc-main-footer-description">
+                    Your premier destination for fitness, wellness, and community. Join us in achieving your fitness goals.
+                </p>
+                <div class="rsc-main-footer-social-links">
+                    <a href="#" class="rsc-main-footer-social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="rsc-main-footer-social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="rsc-main-footer-social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="rsc-main-footer-social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="rsc-main-footer-links">
+                <h4 class="rsc-main-footer-title">Quick Links</h4>
+                <ul class="rsc-main-footer-list">
+                    <li><a href="../index.html" class="rsc-main-footer-link">Home</a></li>
+                    <li><a href="recreation.html" class="rsc-main-footer-link">About Club</a></li>
+                    <li><a href="membership.html" class="rsc-main-footer-link">Membership</a></li>
+                    <li><a href="events.html" class="rsc-main-footer-link">Events</a></li>
+                    <li><a href="gallery.html" class="rsc-main-footer-link">Gallery</a></li>
+                </ul>
+            </div>
+
+            <div class="rsc-main-footer-links">
+                <h4 class="rsc-main-footer-title">Facilities</h4>
+                <ul class="rsc-main-footer-list">
+                    <li><a href="indoor.html" class="rsc-main-footer-link">Indoor Sports</a></li>
+                    <li><a href="outdoor.html" class="rsc-main-footer-link">Outdoor Sports</a></li>
+                    <li><a href="recreation.html" class="rsc-main-footer-link">Recreation</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="rsc-main-footer-contact">
+                <h4 class="rsc-main-footer-title">Contact Info</h4>
+                <div class="rsc-main-footer-contact-info">
+                    <div class="rsc-main-footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Visit Us</strong>
+                            <span>Pakistan , Karachi City</span>
+                        </div>
+                    </div>
+                    <div class="rsc-main-footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Call Us</strong>
+                            <span>+92 314-1002327</span>
+                        </div>
+                    </div>
+                    <div class="rsc-main-footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email Us</strong>
+                            <span>info@ryansportsclub.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rsc-main-footer-newsletter">
+            <div class="rsc-main-footer-newsletter-content">
+                <div class="rsc-main-footer-newsletter-text">
+                    <h4 class="rsc-main-footer-newsletter-title">Stay Updated</h4>
+                    <p class="rsc-main-footer-newsletter-subtitle">Subscribe to our newsletter for the latest updates.</p>
+                </div>
+                <form class="rsc-main-footer-newsletter-form">
+                    <div class="rsc-main-footer-newsletter-input-group">
+                        <input type="email" placeholder="Enter your email address" class="rsc-main-footer-newsletter-input" required>
+                        <button type="submit" class="rsc-main-footer-btn rsc-main-footer-btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Subscribe
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="rsc-main-footer-bottom">
+            <div class="rsc-main-footer-bottom-content">
+                <div class="rsc-main-footer-copyright">
+                    <p>&copy; <span id="rscFooterCurrentYear"></span> RYAN Sports Club. All rights reserved.</p>
+                </div>
+                <div class="rsc-main-footer-legal">
+                    <a href="#" class="rsc-main-footer-legal-link">Privacy Policy</a>
+                    <a href="#" class="rsc-main-footer-legal-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script type="module" src="../js/script.js"></script>
+</body>
+</html>

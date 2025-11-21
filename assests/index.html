@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Sports Club - Where Champions Are Made</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="rsc-nav-container">
+        <div class="rsc-nav-logo">
+            <a href="index.html">
+                <span class="rsc-nav-logo-icon">R</span>
+                <span class="rsc-nav-logo-text">RYAN <span class="rsc-nav-logo-text-green">Sports Club</span></span>
+            </a>
+        </div>
+
+        <div class="rsc-nav-toggle" id="rscNavToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <ul class="rsc-nav-links" id="rscNavLinks">
+            <li class="rsc-nav-item">
+                <a href="index.html" class="rsc-nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+
+            <li class="rsc-nav-item rsc-nav-dropdown-container">
+                <a href="#" class="rsc-nav-link rsc-nav-dropdown-toggle">
+                    <i class="fas fa-info-circle"></i>
+                    <span>About Club</span>
+                    <i class="fas fa-chevron-down rsc-nav-chevron"></i>
+                </a>
+                <ul class="rsc-nav-dropdown-menu">
+                    <li class="rsc-nav-dropdown-item">
+                        <a href="pages/athletes.html" class="rsc-nav-dropdown-link"><i class="fas fa-star"></i> Top Athletes</a>
+                    </li>
+                    <li class="rsc-nav-dropdown-item">
+                        <a href="pages/gallery.html" class="rsc-nav-dropdown-link"><i class="fas fa-images"></i> Gallery</a>
+                    </li>
+                    <li class="rsc-nav-dropdown-item">
+                        <a href="pages/feedback.html" class="rsc-nav-dropdown-link"><i class="fas fa-comments"></i> Feedback</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="rsc-nav-item rsc-nav-dropdown-container">
+                <a href="#" class="rsc-nav-link rsc-nav-dropdown-toggle">
+                    <i class="fas fa-basketball-ball"></i>
+                    <span>Sports</span>
+                    <i class="fas fa-chevron-down rsc-nav-chevron"></i>
+                </a>
+                <ul class="rsc-nav-dropdown-menu">
+                    <li class="rsc-nav-dropdown-item">
+                        <a href="pages/indoor.html" class="rsc-nav-dropdown-link"><i class="fas fa-dumbbell"></i> Indoor Sports</a>
+                    </li>
+                    <li class="rsc-nav-dropdown-item">
+                        <a href="pages/outdoor.html" class="rsc-nav-dropdown-link"><i class="fas fa-futbol"></i> Outdoor Sports</a>
+                    </li>
+                    <li class="rsc-nav-dropdown-item">
+                        <a href="pages/recreation.html" class="rsc-nav-dropdown-link"><i class="fas fa-tree"></i> Recreation</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="rsc-nav-item">
+                <a href="pages/membership.html" class="rsc-nav-link">
+                    <i class="fas fa-id-card"></i>
+                    <span>Membership</span>
+                </a>
+            </li>
+            
+            <li class="rsc-nav-item">
+                <a href="pages/events.html" class="rsc-nav-link">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Events</span>
+                </a>
+            </li>
+            
+            <li class="rsc-nav-item">
+                <a href="pages/contact.html" class="rsc-nav-link">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>🏆 Premium Sports Facility</span>
+            </div>
+            <h1>
+                <span class="hero-title-line">Welcome to</span>
+                <span class="hero-title-accent">Ryan Sports Club</span>
+            </h1>
+            <p class="hero-description">
+                Where Champions Are Made. Experience world-class facilities, 
+                expert coaching, and a vibrant community dedicated to 
+                excellence in sports.
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="500">0</div>
+                    <div class="stat-label">Active Members</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="25">0</div>
+                    <div class="stat-label">Sports Facilities</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="15">0</div>
+                    <div class="stat-label">Expert Coaches</div>
+                </div>
+            </div>
+            <div class="button-group">
+                <button class="btn btn-primary">
+                    <i class="fas fa-phone-alt"></i>
+                    Contact us
+                </button>
+                <button class="btn btn-secondary">
+                    <i class="fas fa-play-circle"></i>
+                    Watch Tour
+                </button>
+            </div>
+        </div>
+        
+        <div class="hero-visual">
+            <div id="canvas-container"></div>
+            <div class="floating-elements">
+                <div class="floating-element element-1">
+                    <i class="fas fa-basketball-ball"></i>
+                </div>
+                <div class="floating-element element-2">
+                    <i class="fas fa-futbol"></i>
+                </div>
+                <div class="floating-element element-3">
+                    <i class="fas fa-running"></i>
+                </div>
+                <div class="floating-element element-4">
+                    <i class="fas fa-trophy"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+<section class="rsc-mission-v2">
+  <div class="rsc-particles" id="rsc-particles"></div>
+  
+  <div class="rsc-container">
+    <div class="rsc-mission-header">
+      <h2 class="rsc-section-title">
+        Our <span class="rsc-text-green">Mission</span>
+      </h2>
+      <p class="rsc-mission-subtitle">Building a healthier, stronger community through the power of sports</p>
+    </div>
+    
+    <div class="rsc-mission-content">
+      
+      <div class="rsc-mission-text">
+        <h3>Fostering Community Through Sports</h3>
+        <p>At RYAN Sports Club, we believe in the transformative power of sports. Our mission is to create an inclusive, welcoming environment where individuals and families can thrive physically, mentally, and socially.</p>
+        
+        <div class="rsc-mission-features">
+          <div class="rsc-feature">
+            <i class="fas fa-users"></i>
+            <span>Inclusive Community</span>
+          </div>
+          <div class="rsc-feature">
+            <i class="fas fa-dumbbell"></i>
+            <span>Modern Facilities</span>
+          </div>
+          <div class="rsc-feature">
+            <i class="fas fa-trophy"></i>
+            <span>Expert Coaching</span>
+          </div>
+          <div class="rsc-feature">
+            <i class="fas fa-heartbeat"></i>
+            <span>Health & Wellness</span>
+          </div>
+        </div>
+        
+        <a href="pages/membership.html" class="rsc-btn rsc-btn-primary">
+          Join Our Community
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      
+      <div class="rsc-mission-visual">
+        <div class="rsc-floating-card rsc-card-1">
+          <i class="fas fa-bullseye"></i>
+          <h3>Our Vision</h3>
+          <p>Creating champions in sport and life</p>
+        </div>
+        
+        <div class="rsc-floating-card rsc-card-2">
+          <i class="fas fa-handshake"></i>
+          <h3>Community</h3>
+          <p>Connecting people through sports</p>
+        </div>
+        
+        <div class="rsc-floating-card rsc-card-3">
+          <i class="fas fa-medal"></i>
+          <h3>Excellence</h3>
+          <p>Striving for the best in everything</p>
+        </div>
+        
+        <div class="rsc-floating-card rsc-card-4">
+          <i class="fas fa-leaf"></i>
+          <h3>Wellness</h3>
+          <p>Promoting healthy lifestyles</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="rsc-facilities">
+  <div class="rsc-container">
+    
+    <div class="rsc-facility-header">
+      <h2 class="rsc-section-title">
+        Explore Our <span class="rsc-text-green">Facilities</span>
+      </h2>
+      <p class="rsc-facility-subtitle">State-of-the-art amenities for every athlete.</p>
+    </div>
+    
+    <div class="rsc-facility-tabs">
+      <button class="rsc-tab-btn rsc-tab-active" data-tab="facility-indoor">
+        <i class="fas fa-dumbbell"></i> Indoor Sports
+      </button>
+      <button class="rsc-tab-btn" data-tab="facility-outdoor">
+        <i class="fas fa-futbol"></i> Outdoor Sports
+      </button>
+      <button class="rsc-tab-btn" data-tab="facility-recreation">
+        <i class="fas fa-tree"></i> Recreation
+      </button>
+    </div>
+    
+    <div class="rsc-facility-content">
+      
+      <div class="rsc-tab-pane rsc-pane-active" id="facility-indoor">
+        <div class="rsc-pane-grid">
+          <div class="rsc-pane-image">
+            <img src="images/indoor.jpg" alt="Indoor Sports Facility">
+          </div>
+          <div class="rsc-pane-text">
+            <h3>Modern Indoor Arena</h3>
+            <p>Our indoor facilities are equipped with the latest gear for basketball, badminton, table tennis, and a fully functional gymnasium. Air-conditioned and well-maintained for your comfort.</p>
+            <a href="pages/indoor.html" class="rsc-btn rsc-btn-primary">Explore Indoor <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="rsc-tab-pane" id="facility-outdoor">
+        <div class="rsc-pane-grid">
+          <div class="rsc-pane-image">
+            <img src="images/outdoor.jpg" alt="Outdoor Sports Facility">
+          </div>
+          <div class="rsc-pane-text">
+            <h3>Spacious Outdoor Fields</h3>
+            <p>Enjoy sports under the open sky. We offer professional-grade cricket pitches, football turf, tennis courts, and a dedicated running track. All facilities are floodlit for evening play.</p>
+            <a href="pages/outdoor.html" class="rsc-btn rsc-btn-primary">Explore Outdoor <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="rsc-tab-pane" id="facility-recreation">
+        <div class="rsc-pane-grid">
+          <div class="rsc-pane-image">
+            <img src="images/recreation.png" alt="Recreation Facility">
+          </div>
+          <div class="rsc-pane-text">
+            <h3>Relax & Recreate</h3>
+            <p>Take a break from the action in our recreation zones. Featuring a swimming pool, yoga studio, sauna, and a cozy cafe to relax and socialize with fellow members.</p>
+            <a href="pages/recreation.html" class="rsc-btn rsc-btn-primary">Explore Recreation <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+    <section class="rsc-why-us">
+  <div class="rsc-container">
+    
+    <div class="rsc-why-header">
+      <h2 class="rsc-section-title">
+        Why Choose <span class="rsc-text-green">RYAN Sports Club?</span>
+      </h2>
+      <p class="rsc-why-subtitle">Your ultimate destination for sports, health, and community.</p>
+    </div>
+    
+    <div class="rsc-why-grid">
+      
+      <div class="rsc-why-card">
+        <div class="rsc-why-icon">
+          <i class="fas fa-trophy"></i>
+        </div>
+        <h3>World-Class Facilities</h3>
+        <p>State-of-the-art equipment and professionally maintained courts and fields for an unmatched sporting experience.</p>
+      </div>
+      
+      <div class="rsc-why-card">
+        <div class="rsc-why-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h3>Expert Coaching</h3>
+        <p>Learn from certified and experienced professionals dedicated to helping you achieve your personal fitness goals.</p>
+      </div>
+      
+      <div class="rsc-why-card">
+        <div class="rsc-why-icon">
+          <i class="fas fa-heart"></i>
+        </div>
+        <h3>Vibrant Community</h3>
+        <p>Join a friendly and supportive community of sports lovers. We host regular events, leagues, and social gatherings.</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="rsc-hero-carousel" id="rscHeroCarousel">
+    
+    <div class="rsc-hero-slide rsc-slide-active" 
+         style="background-image: url('images/CAROUSEL.png');">
+    </div>
+    <div class="rsc-hero-slide" 
+         style="background-image: url('images/CAROUSEL-1.png');">
+    </div>
+    <div class="rsc-hero-slide" 
+         style="background-image: url('images/CAROUSEL-2.png');">
+    </div>
+    <div class="rsc-hero-slide" 
+         style="background-image: url('images/CAROUSEL-3.png');">
+    </div>
+    <div class="rsc-hero-slide" 
+         style="background-image: url('images/CAROUSEL-4.png');">
+    </div>
+
+    <div class="rsc-hero-overlay"></div>
+    
+    <div class="rsc-hero-content">
+        <h1 class="rsc-hero-title">Experience <span class="rsc-text-green">Excellence</span></h1>
+        <p class="rsc-hero-subtitle">Discover world-class facilities and a vibrant community at RYAN Sports Club.</p>
+        <a href="pages/membership.html" class="rsc-btn rsc-btn-primary rsc-hero-btn">Join The Club</a>
+    </div>
+    
+    <div class="rsc-hero-progress-container">
+        <div class="rsc-hero-progress">
+            <div class="rsc-hero-progress-inner"></div>
+        </div>
+        <div class="rsc-hero-progress">
+            <div class="rsc-hero-progress-inner"></div>
+        </div>
+        <div class="rsc-hero-progress">
+            <div class="rsc-hero-progress-inner"></div>
+        </div>
+        <div class="rsc-hero-progress">
+            <div class="rsc-hero-progress-inner"></div>
+        </div>
+        <div class="rsc-hero-progress">
+            <div class="rsc-hero-progress-inner"></div>
+        </div>
+    </div>
+
+    
+    
+</section>
+
+
+
+
+
+
+
+    <section class="rsc-safety">
+  <div class="rsc-container">
+    
+    <div class="rsc-safety-header">
+      <h2 class="rsc-section-title">
+        Safety & <span class="rsc-text-green">Security Policies</span>
+      </h2>
+      <p class="rsc-safety-subtitle">Your well-being is our top priority. We are committed to providing a safe and secure environment for all members.</p>
+    </div>
+    
+    <div class="rsc-policy-list">
+      
+      <div class="rsc-policy-item">
+        <div class="rsc-policy-icon">
+          <i class="fas fa-first-aid"></i>
+        </div>
+        <div class="rsc-policy-text">
+          <h3>Member Health & First Aid</h3>
+          <p>All our staff are trained in first aid and CPR. We have fully-stocked medical kits available at all major facility points for immediate response.</p>
+        </div>
+      </div>
+      
+      <div class="rsc-policy-item">
+        <div class="rsc-policy-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <div class="rsc-policy-text">
+          <h3>Facility & Equipment Safety</h3>
+          <p>Our facilities are monitored 24/7 by CCTV. All sports equipment is regularly inspected, maintained, and sanitized to ensure it meets the highest safety standards.</p>
+        </div>
+      </div>
+      
+      <div class="rsc-policy-item">
+        <div class="rsc-policy-icon">
+          <i class="fas fa-child"></i>
+        </div>
+        <div class="rsc-policy-text">
+          <h3>Child Protection Policy</h3>
+          <p>We have a strict child safety policy. All children's areas are supervised, and staff working with minors undergo mandatory background checks.</p>
+        </div>
+      </div>
+      
+      <div class="rsc-policy-item">
+        <div class="rsc-policy-icon">
+          <i class="fas fa-lock"></i>
+        </div>
+        <div class="rsc-policy-text">
+          <h3>Data & Privacy Security</h3>
+          <p>Your personal information is safe with us. We use secure servers and encryption to protect all member data, and we never share your details with third parties.</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+<section class="rsc-testimonials">
+  <div class="rsc-container">
+    
+    <div class="rsc-testimonials-header">
+      <h2 class="rsc-section-title">
+        What Our <span class="rsc-text-green">Members Say</span>
+      </h2>
+      <p class="rsc-testimonials-subtitle">Hear from our valued members about their RYAN Sports Club experience.</p>
+    </div>
+    
+    <div class="rsc-testimonial-slider" id="rscTestimonialSlider">
+      
+      <div class="rsc-testimonial-track">
+        
+        <div class="rsc-testimonial-item">
+          <div class="rsc-testimonial-content">
+            <i class="fas fa-quote-left rsc-quote-icon"></i>
+            <p>"RYAN Sports Club has transformed my fitness journey. The facilities are top-notch, and the community is incredibly supportive. Highly recommend!"</p>
+            <div class="rsc-testimonial-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <h4 class="rsc-testimonial-author">Raza</h4>
+            <span class="rsc-testimonial-role">Active Member since 2022</span>
+          </div>
+        </div>
+        
+        <div class="rsc-testimonial-item">
+          <div class="rsc-testimonial-content">
+            <i class="fas fa-quote-left rsc-quote-icon"></i>
+            <p>"I love the variety of classes and the friendly coaches. It's more than just a gym; it's a place to relax, train, and make friends."</p>
+            <div class="rsc-testimonial-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            </div>
+            <h4 class="rsc-testimonial-author">Rimsha Rajpoot</h4>
+            <span class="rsc-testimonial-role">Yoga & Wellness Enthusiast</span>
+          </div>
+        </div>
+        
+        <div class="rsc-testimonial-item">
+          <div class="rsc-testimonial-content">
+            <i class="fas fa-quote-left rsc-quote-icon"></i>
+            <p>"The best sports club in the city! Clean, well-maintained, and always something new to try. My family and I enjoy spending our weekends here."</p>
+            <div class="rsc-testimonial-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <h4 class="rsc-testimonial-author">Ali Raza</h4>
+            <span class="rsc-testimonial-role">Family Member</span>
+          </div>
+        </div>
+        
+        <div class="rsc-testimonial-item">
+          <div class="rsc-testimonial-content">
+            <i class="fas fa-quote-left rsc-quote-icon"></i>
+            <p>"Excellent customer service and fantastic facilities for all ages. RYAN Sports Club truly lives up to its reputation of excellence."</p>
+            <div class="rsc-testimonial-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <h4 class="rsc-testimonial-author">Sana Malik</h4>
+            <span class="rsc-testimonial-role">Swimming & Aqua Member</span>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="rsc-testimonial-controls">
+        <button class="rsc-testimonial-arrow rsc-arrow-prev" id="rscTestiPrev"><i class="fas fa-chevron-left"></i></button>
+        <div class="rsc-testimonial-progress-bar-container">
+          <div class="rsc-testimonial-progress-bar-inner" id="rscTestiProgressBar"></div>
+        </div>
+        <button class="rsc-testimonial-arrow rsc-arrow-next" id="rscTestiNext"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+
+<section class="rsc-faq">
+  <div class="rsc-container">
+    
+    <div class="rsc-faq-header">
+      <h2 class="rsc-section-title">
+        Frequently Asked <span class="rsc-text-green">Questions</span>
+      </h2>
+      <p class="rsc-faq-subtitle">Have questions? We've got answers. Find out everything you need to know about RYAN Sports Club.</p>
+    </div>
+    
+    <div class="rsc-faq-container">
+      
+      <div class="rsc-faq-item">
+        <button class="rsc-faq-question">
+          <span>What are the club's operating hours?</span>
+          <i class="fas fa-chevron-down rsc-faq-icon"></i>
+        </button>
+        <div class="rsc-faq-answer">
+          <p>Our club is open from 6:00 AM to 11:00 PM, seven days a week. Facility-specific timings (like the swimming pool) may vary. Please check the individual facility pages for details.</p>
+        </div>
+      </div>
+      
+      <div class="rsc-faq-item">
+        <button class="rsc-faq-question">
+          <span>Can I bring a guest to the club?</span>
+          <i class="fas fa-chevron-down rsc-faq-icon"></i>
+        </button>
+        <div class="rsc-faq-answer">
+          <p>Yes, members are allowed to bring guests. A guest pass fee is applicable. Each guest must be accompanied by the member and register at the front desk upon arrival.</p>
+        </div>
+      </div>
+      
+      <div class="rsc-faq-item">
+        <button class="rsc-faq-question">
+          <span>Do you provide sports equipment for rent?</span>
+          <i class="fas fa-chevron-down rsc-faq-icon"></i>
+        </button>
+        <div class="rsc-faq-answer">
+          <p>We provide basic equipment for most sports (like basketballs, footballs) at no extra charge. Specialized equipment (like tennis rackets, badminton rackets) is available for rent at our sports shop.</p>
+        </div>
+      </div>
+      
+      <div class="rsc-faq-item">
+        <button class="rsc-faq-question">
+          <span>Is there a discount for family memberships?</span>
+          <i class="fas fa-chevron-down rsc-faq-icon"></i>
+        </button>
+        <div class="rsc-faq-answer">
+          <p>Absolutely! We offer special discounted packages for families (2 adults and up to 2 children). Please visit our 'Membership' page or contact the front desk for detailed pricing.</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+<hr>
+<footer class="rsc-main-footer">
+    <div class="rsc-container">
+        <div class="rsc-main-footer-main">
+            <div class="rsc-main-footer-brand">
+                <div class="rsc-main-footer-logo">
+                    <span class="rsc-main-footer-logo-icon">R</span>
+                    <span class="rsc-main-footer-logo-text">RYAN <span class="rsc-main-footer-logo-text-green">Sports Club</span></span>
+                </div>
+                <p class="rsc-main-footer-description">
+                    Your premier destination for fitness, wellness, and community. Join us in achieving your fitness goals.
+                </p>
+                <div class="rsc-main-footer-social-links">
+                    <a href="#" class="rsc-main-footer-social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="rsc-main-footer-social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="rsc-main-footer-social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="rsc-main-footer-social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="rsc-main-footer-links">
+                <h4 class="rsc-main-footer-title">Quick Links</h4>
+                <ul class="rsc-main-footer-list">
+                    <li><a href="../index.html" class="rsc-main-footer-link">Home</a></li>
+                    <li><a href="pages/recreation.html" class="rsc-main-footer-link">About Club</a></li>
+                    <li><a href="pages/membership.html" class="rsc-main-footer-link">Membership</a></li>
+                    <li><a href="pages/events.html" class="rsc-main-footer-link">Events</a></li>
+                    <li><a href="pages/gallery.html" class="rsc-main-footer-link">Gallery</a></li>
+                </ul>
+            </div>
+
+            <div class="rsc-main-footer-links">
+                <h4 class="rsc-main-footer-title">Facilities</h4>
+                <ul class="rsc-main-footer-list">
+                    <li><a href="pages/indoor.html" class="rsc-main-footer-link">Indoor Sports</a></li>
+                    <li><a href="pages/outdoor.html" class="rsc-main-footer-link">Outdoor Sports</a></li>
+                    <li><a href="pages/recreation.html" class="rsc-main-footer-link">Recreation</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="rsc-main-footer-contact">
+                <h4 class="rsc-main-footer-title">Contact Info</h4>
+                <div class="rsc-main-footer-contact-info">
+                    <div class="rsc-main-footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Visit Us</strong>
+                            <span>Pakistan , Karachi City</span>
+                        </div>
+                    </div>
+                    <div class="rsc-main-footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Call Us</strong>
+                            <span>+92 314-1002327</span>
+                        </div>
+                    </div>
+                    <div class="rsc-main-footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email Us</strong>
+                            <span>info@ryansportsclub.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rsc-main-footer-newsletter">
+            <div class="rsc-main-footer-newsletter-content">
+                <div class="rsc-main-footer-newsletter-text">
+                    <h4 class="rsc-main-footer-newsletter-title">Stay Updated</h4>
+                    <p class="rsc-main-footer-newsletter-subtitle">Subscribe to our newsletter for the latest updates.</p>
+                </div>
+                <form class="rsc-main-footer-newsletter-form">
+                    <div class="rsc-main-footer-newsletter-input-group">
+                        <input type="email" placeholder="Enter your email address" class="rsc-main-footer-newsletter-input" required>
+                        <button type="submit" class="rsc-main-footer-btn rsc-main-footer-btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Subscribe
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="rsc-main-footer-bottom">
+            <div class="rsc-main-footer-bottom-content">
+                <div class="rsc-main-footer-copyright">
+                    <p>&copy; <span id="rscFooterCurrentYear"></span> RYAN Sports Club. All rights reserved.</p>
+                </div>
+                <div class="rsc-main-footer-legal">
+                    <a href="#" class="rsc-main-footer-legal-link">Privacy Policy</a>
+                    <a href="#" class="rsc-main-footer-legal-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>

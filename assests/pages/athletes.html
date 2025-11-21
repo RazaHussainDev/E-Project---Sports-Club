@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+    
+    <nav class="rsc-nav-container">
+  
+  <div class="rsc-nav-logo">
+    <a href="../index.html">
+      <span class="rsc-nav-logo-icon">R</span>
+      <span class="rsc-nav-logo-text">RYAN <span class="rsc-nav-logo-text-green">Sports Club</span></span>
+    </a>
+  </div>
+
+  <div class="rsc-nav-toggle" id="rscNavToggle">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <ul class="rsc-nav-links" id="rscNavLinks">
+    
+    <li class="rsc-nav-item">
+      <a href="../index.html" class="rsc-nav-link rsc-nav-active">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+    </li>
+
+    <li class="rsc-nav-item rsc-nav-dropdown-container">
+      <a href="#" class="rsc-nav-link rsc-nav-dropdown-toggle">
+        <i class="fas fa-info-circle"></i>
+        <span>About Club</span>
+        <i class="fas fa-chevron-down rsc-nav-chevron"></i>
+      </a>
+      <ul class="rsc-nav-dropdown-menu">
+        <li class="rsc-nav-dropdown-item">
+          <a href="athletes.html" class="rsc-nav-dropdown-link"><i class="fas fa-star"></i> Top Athletes</a>
+        </li>
+        <li class="rsc-nav-dropdown-item">
+          <a href="gallery.html" class="rsc-nav-dropdown-link"><i class="fas fa-images"></i> Gallery</a>
+        </li>
+        <li class="rsc-nav-dropdown-item">
+          <a href="feedback.html" class="rsc-nav-dropdown-link"><i class="fas fa-comments"></i> Feedback</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="rsc-nav-item rsc-nav-dropdown-container">
+      <a href="#" class="rsc-nav-link rsc-nav-dropdown-toggle">
+        <i class="fas fa-basketball-ball"></i>
+        <span>Sports</span>
+        <i class="fas fa-chevron-down rsc-nav-chevron"></i>
+      </a>
+      <ul class="rsc-nav-dropdown-menu">
+        <li class="rsc-nav-dropdown-item">
+          <a href="indoor.html" class="rsc-nav-dropdown-link"><i class="fas fa-dumbbell"></i> Indoor Sports</a>
+        </li>
+        <li class="rsc-nav-dropdown-item">
+          <a href="outdoor.html" class="rsc-nav-dropdown-link"><i class="fas fa-futbol"></i> Outdoor Sports</a>
+        </li>
+        <li class="rsc-nav-dropdown-item">
+          <a href="recreation.html" class="rsc-nav-dropdown-link"><i class="fas fa-tree"></i> Recreation</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="rsc-nav-item">
+      <a href="membership.html" class="rsc-nav-link">
+        <i class="fas fa-id-card"></i>
+        <span>Membership</span>
+      </a>
+    </li>
+    
+    <li class="rsc-nav-item">
+      <a href="events.html" class="rsc-nav-link">
+        <i class="fas fa-calendar-alt"></i>
+        <span>Events</span>
+      </a>
+    </li>
+    
+    <li class="rsc-nav-item">
+      <a href="contact.html" class="rsc-nav-link">
+        <i class="fas fa-phone-alt"></i>
+        <span>Contact</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<!-- ----------------------------------------------------------------------------------------- -->
+
+
+ 
+    <section class="rsc-athletes-hero">
+        <div class="rsc-container">
+            <div class="rsc-athletes-hero-badge">
+                <span>🏆 Elite Athletes</span>
+            </div>
+            <h1 class="rsc-athletes-hero-title">Our Champion Athletes</h1>
+            <p class="rsc-athletes-hero-subtitle">
+                Meet the exceptional athletes who have trained with us and achieved remarkable success in their respective sports.
+            </p>
+        </div>
+    </section>
+
+    <section class="rsc-athletes-filter">
+        <div class="rsc-container">
+            <h2 class="rsc-athletes-filter-title">Filter by Sport</h2>
+            <div class="rsc-athletes-filter-buttons">
+                <button class="rsc-athletes-filter-btn rsc-active" data-filter="all">
+                    <i class="fas fa-star"></i> All Athletes
+                </button>
+                <button class="rsc-athletes-filter-btn" data-filter="football">
+                    <i class="fas fa-futbol"></i> Football
+                </button>
+                <button class="rsc-athletes-filter-btn" data-filter="basketball">
+                    <i class="fas fa-basketball-ball"></i> Basketball
+                </button>
+                <button class="rsc-athletes-filter-btn" data-filter="swimming">
+                    <i class="fas fa-swimmer"></i> Swimming
+                </button>
+                <button class="rsc-athletes-filter-btn" data-filter="tennis">
+                    <i class="fas fa-table-tennis"></i> Tennis
+                </button>
+                <button class="rsc-athletes-filter-btn" data-filter="athletics">
+                    <i class="fas fa-running"></i> Athletics
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="rsc-athletes-grid-section">
+        <div class="rsc-container">
+            <div class="rsc-athletes-grid">
+                
+                <div class="rsc-athlete-card" data-sport="football">
+                    <div class="rsc-athlete-image">
+                        <img src="../images/Football-1.jpg" alt="Ahmed Khan">
+                        <div class="rsc-athlete-sport-badge">Football</div>
+                    </div>
+                    <div class="rsc-athlete-info">
+                        <h3 class="rsc-athlete-name">Ahmed Khan</h3>
+                        <span class="rsc-athlete-sport">Professional Footballer</span>
+                        <div class="rsc-athlete-achievements">
+                            <div class="rsc-achievement-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>15 Trophies</span>
+                            </div>
+                            <div class="rsc-achievement-item">
+                                <i class="fas fa-medal"></i>
+                                <span>3 Gold Medals</span>
+                            </div>
+                        </div>
+                        <p class="rsc-athlete-bio">
+                            Ahmed trained at Ryan Sports Club for 5 years before joining the national team. He's known for his exceptional dribbling skills and goal-scoring ability.
+                        </p>
+                        <div class="rsc-athlete-stats">
+                            <div class="rsc-stat">
+                                <div class="rsc-stat-value">142</div>
+                                <div class="rsc-stat-label">Goals</div>
+                            </div>
+                            <div class="rsc-stat">
+                                <div class="rsc-stat-value">58</div>
+                                <div class="rsc-stat-label">Assists</div>
+                            </div>
+                            <div class="rsc-stat">
+                                <div class="rsc-stat-value">7</div>
+                                <div class="rsc-stat-label">Years</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="rsc-athlete-card" data-sport="football">
+                    <div class="rsc-athlete-image">
+                        <img src="../images/Football-2.jpg" alt="Raza">
+                        <div class="rsc-athlete-sport-badge">Football</div>
+                    </div>
+                    <div class="rsc-athlete-info">
+                        <h3 class="rsc-athlete-name">Raza</h3>
+                        <span class="rsc-athlete-sport">Professional Footballer</span>
+                        <div class="rsc-athlete-achievements">
+                            <div class="rsc-achievement-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>15 Trophies</span>
+                            </div>
+                            <div class="rsc-achievement-item">
+                                <i class="fas fa-medal"></i>
+                                <span>3 Gold Medals</span>
+                            </div>
+                        </div>
+                        <p class="rsc-athlete-bio">
+                            Ahmed trained at Ryan Sports Club for 5 years before joining the national team. He's known for his exceptional dribbling skills and goal-scoring ability.
+                        </p>
+                        <div class="rsc-athlete-stats">
+                            <div class="rsc-stat">
+                                <div class="rsc-stat-value">142</div>
+                                <div class="rsc-stat-label">Goals</div>
+                            </div>
+                            <div class="rsc-stat">
+                                <div class="rsc-stat-value">58</div>
+                                <div class="rsc-stat-label">Assists</div>
+                            </div>
+                            <div class="rsc-stat">
+                                <div class="rsc-stat-value">7</div>
+                                <div class="rsc-stat-label">Years</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rsc-athlete-card" data-sport="basketball">
+                    <div class="rsc-athlete-image">
+                        <img src="../images/Basketball-1.jpg" alt="Rimsha">
+                        <div class="rsc-athlete-sport-badge">Rimsha</div>
+                    </div>
+                    <div class="rsc-athlete-info">
+                        <h3 class="rsc-athlete-name">Sarah Johnson</h3>
+                        <span class="rsc-athlete-sport">Professional Basketball Player</span>
+                        <div class="rsc-athlete-achievements">
+                            <div class="rsc-achievement-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>8 Championships</span>
+                            </div>
+                            <div class="rsc-achievement-item">
+                                <i class="fas fa-medal"></i>
+                                <span>2 MVP Awards</span>
+                            </div>
+                        </div>
+                        <p class="rsc-athlete-bio">
+                            Sarah developed her skills at Ryan Sports Club before playing college basketball and turning professional. She's known for her three-point shooting accuracy.
+                        </p>
+                        <div class="rsc-athlete-stats">
+                            <div class="rsc-stat">
+                                <div class="rsc-stat-value">24.5</div>
+                                <div class="rsc-stat-label">PPG</div>
+                            </div>
+                            <div class="rsc-stat">
+                                <div class="rsc-stat-value">8.2</div>
+                                <div class="rsc-stat-label">RPG</div>
+                            </div>
+                            <div class="rsc-stat">
+                                <div class="rsc-stat-value">6</div>
+                                <div class="rsc-stat-label">Years</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="rsc-athlete-card" data-sport="basketball">
+                    <div class="rsc-athlete-image">
+                        <img src="../images/Basketball-2.jpg" alt="Owais">
+                        <div class="rsc-athlete-sport-badge">Basketball</div>
+                    </div>
+                    <div class="rsc-athlete-info">
+                        <h3 class="rsc-athlete-name">Owais</h3>
+                        <span class="rsc-athlete-sport">Professional Basketball Player</span>
+                        <div class="rsc-athlete-achievements">
+                            <div class="rsc-achievement-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>8 Championships</span>
+                            </div>
+                            <div class="rsc-achievement-item">
+                                <i class="fas fa-medal"></i>
+                                <span>2 MVP Awards</span>
+                            </div>
+                        </div>
+                        <p class="rsc-athlete-bio">
+                            Sarah developed her skills at Ryan Sports Club before playing college basketball and turning professional. She's known for her three-point shooting accuracy.
+                        </p>
+                        <div class="rsc-athlete-stats">
+                            <div class="rsc-stat">
+                                <div class="rsc-stat-value">24.5</div>
+                                <div class="rsc-stat-label">PPG</div>
+                            </div>
+                            <div class="rsc-stat">
+                                <div class="rsc-stat-value">8.2</div>
+                                <div class="rsc-stat-label">RPG</div>
+                            </div>
+                            <div class="rsc-stat">
+                                <div class="rsc-stat-value">6</div>
+                                <div class="rsc-stat-label">Years</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="rsc-athlete-card" data-sport="basketball">
+                    <div class="rsc-athlete-image">
+                        <img src="../images/Basketball-3.jpg" alt="Wania">
+                        <div class="rsc-athlete-sport-badge">Basketball</div>
+                    </div>
+                    <div class="rsc-athlete-info">
+                        <h3 class="rsc-athlete-name">Wania</h3>
+                        <span class="rsc-athlete-sport">Professional Basketball Player</span>
+                        <div class="rsc-athlete-achievements">
+                            <div class="rsc-achievement-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>8 Championships</span>
+                            </div>
+                            <div class="rsc-achievement-item">
+                                <i class="fas fa-medal"></i>
+                                <span>2 MVP Awards</span>
+                            </div>
+                        </div>
+                        <p class="rsc-athlete-bio">
+                            Sarah developed her skills at Ryan Sports Club before playing college basketball and turning professional. She's known for her three-point shooting accuracy.
+                        </p>
+                        <div class="rsc-athlete-stats">
+                            <div class="rsc-stat">
+                                <div class="rsc-stat-value">24.5</div>
+                                <div class="rsc-stat-label">PPG</div>
+                            </div>
+                            <div class="rsc-stat">
+                                <div class="rsc-stat-value">8.2</div>
+                                <div class="rsc-stat-label">RPG</div>
+                            </div>
+                            <div class="rsc-stat">
+                                <div class="rsc-stat-value">6</div>
+                                <div class="rsc-stat-label">Years</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rsc-athlete-card" data-sport="swimming">
+                    <div class="rsc-athlete-image">
+                        <img src="../images/Swimming-1.png" alt="Uzair ali">
+                        <div class="rsc-athlete-sport-badge">Swimming</div>
+                    </div>
+                    <div class="rsc-athlete-info">
+                        <h3 class="rsc-athlete-name">Uzair Ali</h3>
+                        <span class="rsc-athlete-sport">Olympic Swimmer</span>
+                        <div class="rsc-athlete-achievements">
+                            <div class="rsc-achievement-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>12 Gold Medals</span>
+                            </div>
+                            <div class="rsc-achievement-item">
+                                <i class="fas fa-medal"></i>
+                                <span>3 World Records</span>
+                            </div>
+                        </div>
+                        <p class="rsc-athlete-bio">
+                            Michael trained in our Olympic-sized pool for 8 years before competing internationally. He holds multiple national records in freestyle and butterfly.
+                        </p>
+                        <div class="rsc-athlete-stats">
+                            <div class="rsc-stat">
+                                <div class="rsc-stat-value">9</div>
+                                <div class="rsc-stat-label">Records</div>
+                            </div>
+                            <div class="rsc-stat">
+                                <div class="rsc-stat-value">28</div>
+                                <div class="rsc-stat-label">Medals</div>
+                            </div>
+                            <div class="rsc-stat">
+                                <div class="rsc-stat-value">10</div>
+                                <div class="rsc-stat-label">Years</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rsc-athlete-card" data-sport="tennis">
+                    <div class="rsc-athlete-image">
+                        <img src="../images/Tennis-1.jpg" alt="Abubakar">
+                        <div class="rsc-athlete-sport-badge">Tennis</div>
+                    </div>
+                    <div class="rsc-athlete-info">
+                        <h3 class="rsc-athlete-name">Abubakar</h3>
+                        <span class="rsc-athlete-sport">Professional Tennis Player</span>
+                        <div class="rsc-athlete-achievements">
+                            <div class="rsc-achievement-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>6 Grand Slams</span>
+                            </div>
+                            <div class="rsc-achievement-item">
+                                <i class="fas fa-medal"></i>
+                                <span>World No. 3</span>
+                            </div>
+                        </div>
+                        <p class="rsc-athlete-bio">
+                            Emma started her tennis journey at Ryan Sports Club at age 7. She's now ranked among the top players globally with multiple Grand Slam titles.
+                        </p>
+                        <div class="rsc-athlete-stats">
+                            <div class="rsc-stat">
+                                <div class="rsc-stat-value">84%</div>
+                                <div class="rsc-stat-label">Win Rate</div>
+                            </div>
+                            <div class="rsc-stat">
+                                <div class="rsc-stat-value">42</div>
+                                <div class="rsc-stat-label">Titles</div>
+                            </div>
+                            <div class="rsc-stat">
+                                <div class="rsc-stat-value">15</div>
+                                <div class="rsc-stat-label">Years</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rsc-athlete-card" data-sport="athletics">
+                    <div class="rsc-athlete-image">
+                        <img src="../images/Athletics.jpg" alt="Wajid Ansari">
+                        <div class="rsc-athlete-sport-badge">Athletics</div>
+                    </div>
+                    <div class="rsc-athlete-info">
+                        <h3 class="rsc-athlete-name">Wajid Ansari</h3>
+                        <span class="rsc-athlete-sport">Sprint Specialist</span>
+                        <div class="rsc-athlete-achievements">
+                            <div class="rsc-achievement-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>National Champion</span>
+                            </div>
+                            <div class="rsc-achievement-item">
+                                <i class="fas fa-medal"></i>
+                                <span>2 Asian Games Medals</span>
+                            </div>
+                        </div>
+                        <p class="rsc-athlete-bio">
+                            David trained on our professional track for 6 years. He specializes in 100m and 200m sprints and has represented the country in multiple international competitions.
+                        </p>
+                        <div class="rsc-athlete-stats">
+                            <div class="rsc-stat">
+                                <div class="rsc-stat-value">9.98s</div>
+                                <div class="rsc-stat-label">100m PB</div>
+                            </div>
+                            <div class="rsc-stat">
+                                <div class="rsc-stat-value">19.76s</div>
+                                <div class="rsc-stat-label">200m PB</div>
+                            </div>
+                            <div class="rsc-stat">
+                                <div class="rsc-stat-value">6</div>
+                                <div class="rsc-stat-label">Years</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rsc-athlete-card" data-sport="football">
+                    <div class="rsc-athlete-image">
+                        <img src="../images/Football-3.jpg" alt="Fatima Zahra">
+                        <div class="rsc-athlete-sport-badge">Football</div>
+                    </div>
+                    <div class="rsc-athlete-info">
+                        <h3 class="rsc-athlete-name">Fatima Zahra</h3>
+                        <span class="rsc-athlete-sport">National Team Captain</span>
+                        <div class="rsc-athlete-achievements">
+                            <div class="rsc-achievement-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>8 League Titles</span>
+                            </div>
+                            <div class="rsc-achievement-item">
+                                <i class="fas fa-medal"></i>
+                                <span>Golden Boot Winner</span>
+                            </div>
+                        </div>
+                        <p class="rsc-athlete-bio">
+                            Fatima developed her skills at Ryan Sports Club from a young age. She now captains the national women's football team and is a role model for young athletes.
+                        </p>
+                        <div class="rsc-athlete-stats">
+                            <div class="rsc-stat">
+                                <div class="rsc-stat-value">98</div>
+                                <div class="rsc-stat-label">Goals</div>
+                            </div>
+                            <div class="rsc-stat">
+                                <div class="rsc-stat-value">42</div>
+                                <div class="rsc-stat-label">Caps</div>
+                            </div>
+                            <div class="rsc-stat">
+                                <div class="rsc-stat-value">8</div>
+                                <div class="rsc-stat-label">Years</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rsc-athletes-achievements">
+        <div class="rsc-container">
+            <h2 class="rsc-achievements-title">Club <span>Achievements</span></h2>
+            <p class="rsc-achievements-subtitle">
+                Our athletes' success is our pride. Here are some of the remarkable achievements from our training programs.
+            </p>
+            <div class="rsc-achievements-grid">
+                <div class="rsc-achievement-card">
+                    <div class="rsc-achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="rsc-achievement-number" data-count="156">0</div>
+                    <div class="rsc-achievement-text">National Championships</div>
+                </div>
+                <div class="rsc-achievement-card">
+                    <div class="rsc-achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="rsc-achievement-number" data-count="89">0</div>
+                    <div class="rsc-achievement-text">International Medals</div>
+                </div>
+                <div class="rsc-achievement-card">
+                    <div class="rsc-achievement-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="rsc-achievement-number" data-count="42">0</div>
+                    <div class="rsc-achievement-text">Professional Athletes</div>
+                </div>
+                <div class="rsc-achievement-card">
+                    <div class="rsc-achievement-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="rsc-achievement-number" data-count="15">0</div>
+                    <div class="rsc-achievement-text">Olympians</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rsc-training-programs">
+        <div class="rsc-container">
+            <h2 class="rsc-training-title">Elite <span>Training Programs</span></h2>
+            <p class="rsc-training-subtitle">
+                Our specialized training programs are designed to develop the next generation of champion athletes.
+            </p>
+            <div class="rsc-programs-grid">
+                <div class="rsc-program-card">
+                    <div class="rsc-program-header">
+                        <h3 class="rsc-program-name">Junior Development</h3>
+                        <div class="rsc-program-level">Ages 8-14</div>
+                    </div>
+                    <div class="rsc-program-content">
+                        <ul class="rsc-program-features">
+                            <li><i class="fas fa-check"></i> Fundamental skill development</li>
+                            <li><i class="fas fa-check"></i> Age-appropriate training</li>
+                            <li><i class="fas fa-check"></i> Sports psychology basics</li>
+                            <li><i class="fas fa-check"></i> Nutrition guidance</li>
+                            <li><i class="fas fa-check"></i> 3 sessions per week</li>
+                        </ul>
+                        <a href="#" class="rsc-program-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="rsc-program-card">
+                    <div class="rsc-program-header">
+                        <h3 class="rsc-program-name">Performance Academy</h3>
+                        <div class="rsc-program-level">Ages 15-18</div>
+                    </div>
+                    <div class="rsc-program-content">
+                        <ul class="rsc-program-features">
+                            <li><i class="fas fa-check"></i> Advanced technique training</li>
+                            <li><i class="fas fa-check"></i> Competition preparation</li>
+                            <li><i class="fas fa-check"></i> Strength & conditioning</li>
+                            <li><i class="fas fa-check"></i> Video analysis sessions</li>
+                            <li><i class="fas fa-check"></i> 5 sessions per week</li>
+                        </ul>
+                        <a href="#" class="rsc-program-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="rsc-program-card">
+                    <div class="rsc-program-header">
+                        <h3 class="rsc-program-name">Elite Program</h3>
+                        <div class="rsc-program-level">Ages 18+</div>
+                    </div>
+                    <div class="rsc-program-content">
+                        <ul class="rsc-program-features">
+                            <li><i class="fas fa-check"></i> Professional-level training</li>
+                            <li><i class="fas fa-check"></i> Individualized coaching</li>
+                            <li><i class="fas fa-check"></i> Competition scheduling</li>
+                            <li><i class="fas fa-check"></i> Sports science support</li>
+                            <li><i class="fas fa-check"></i> Full-time program</li>
+                        </ul>
+                        <a href="#" class="rsc-program-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<footer class="rsc-main-footer">
+    <div class="rsc-container">
+        <div class="rsc-main-footer-main">
+            <div class="rsc-main-footer-brand">
+                <div class="rsc-main-footer-logo">
+                    <span class="rsc-main-footer-logo-icon">R</span>
+                    <span class="rsc-main-footer-logo-text">RYAN <span class="rsc-main-footer-logo-text-green">Sports Club</span></span>
+                </div>
+                <p class="rsc-main-footer-description">
+                    Your premier destination for fitness, wellness, and community. Join us in achieving your fitness goals.
+                </p>
+                <div class="rsc-main-footer-social-links">
+                    <a href="#" class="rsc-main-footer-social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="rsc-main-footer-social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="rsc-main-footer-social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="rsc-main-footer-social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="rsc-main-footer-links">
+                <h4 class="rsc-main-footer-title">Quick Links</h4>
+                <ul class="rsc-main-footer-list">
+                    <li><a href="../index.html" class="rsc-main-footer-link">Home</a></li>
+                    <li><a href="recreation.html" class="rsc-main-footer-link">About Club</a></li>
+                    <li><a href="membership.html" class="rsc-main-footer-link">Membership</a></li>
+                    <li><a href="events.html" class="rsc-main-footer-link">Events</a></li>
+                    <li><a href="gallery.html" class="rsc-main-footer-link">Gallery</a></li>
+                </ul>
+            </div>
+
+            <div class="rsc-main-footer-links">
+                <h4 class="rsc-main-footer-title">Facilities</h4>
+                <ul class="rsc-main-footer-list">
+                    <li><a href="indoor.html" class="rsc-main-footer-link">Indoor Sports</a></li>
+                    <li><a href="outdoor.html" class="rsc-main-footer-link">Outdoor Sports</a></li>
+                    <li><a href="recreation.html" class="rsc-main-footer-link">Recreation</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="rsc-main-footer-contact">
+                <h4 class="rsc-main-footer-title">Contact Info</h4>
+                <div class="rsc-main-footer-contact-info">
+                    <div class="rsc-main-footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Visit Us</strong>
+                            <span>Pakistan , Karachi City</span>
+                        </div>
+                    </div>
+                    <div class="rsc-main-footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Call Us</strong>
+                            <span>+92 314-1002327</span>
+                        </div>
+                    </div>
+                    <div class="rsc-main-footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email Us</strong>
+                            <span>info@ryansportsclub.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rsc-main-footer-newsletter">
+            <div class="rsc-main-footer-newsletter-content">
+                <div class="rsc-main-footer-newsletter-text">
+                    <h4 class="rsc-main-footer-newsletter-title">Stay Updated</h4>
+                    <p class="rsc-main-footer-newsletter-subtitle">Subscribe to our newsletter for the latest updates.</p>
+                </div>
+                <form class="rsc-main-footer-newsletter-form">
+                    <div class="rsc-main-footer-newsletter-input-group">
+                        <input type="email" placeholder="Enter your email address" class="rsc-main-footer-newsletter-input" required>
+                        <button type="submit" class="rsc-main-footer-btn rsc-main-footer-btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Subscribe
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="rsc-main-footer-bottom">
+            <div class="rsc-main-footer-bottom-content">
+                <div class="rsc-main-footer-copyright">
+                    <p>&copy; <span id="rscFooterCurrentYear"></span> RYAN Sports Club. All rights reserved.</p>
+                </div>
+                <div class="rsc-main-footer-legal">
+                    <a href="#" class="rsc-main-footer-legal-link">Privacy Policy</a>
+                    <a href="#" class="rsc-main-footer-legal-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
+
+
+    <script type="module" src="../js/script.js"></script>
+</body>
+</html>
