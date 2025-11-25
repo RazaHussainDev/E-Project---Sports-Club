@@ -1553,14 +1553,9 @@ body {
 
 
 /* =================================== */
-
-/* =================================== */
-/* ATHLETES PAGE STYLES (THEME-ALIGNED)
+/* ATHLETES PAGE STYLES                */
 /* =================================== */
 
-/* =================================== */
-/* ATHLETES HERO SECTION               */
-/* =================================== */
 .rsc-athletes-hero {
     padding: 100px 0 60px;
     background: linear-gradient(135deg, var(--light) 0%, #ffffff 100%);
@@ -2014,14 +2009,9 @@ body {
 
 
 /* =================================== */
-/* GALLERY PAGE STYLES (PINTEREST STYLE)
+/* GALLERY PAGE STYLES                 */
 /* =================================== */
 
-/* Aapke main :root variables ka istemal karega */
-
-/* =================================== */
-/* GALLERY HERO SECTION                */
-/* =================================== */
 .rsc-gallery-hero {
     padding: 100px 0 60px;
     background: linear-gradient(135deg, var(--light) 0%, #e0f2fe 100%);
