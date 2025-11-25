@@ -1,4 +1,7 @@
-/* ===== GLOBAL STYLES ===== */
+/* =================================== */
+/* GLOBAL STYLES                       */
+/* =================================== */
+
 :root {
     --primary: #004a99;
     --primary-dark: #003366;
@@ -31,7 +34,10 @@ body {
     overflow-x: hidden;
 }
 
-/* ===== NAVIGATION ===== */
+/* =================================== */
+/* NAVIGATION                          */
+/* =================================== */
+
 .rsc-nav-container {
     background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -119,7 +125,10 @@ body {
     box-shadow: var(--shadow);
 }
 
-/* Dropdown Styles */
+/* =================================== */
+/* DROPDOWN STYLES                     */
+/* =================================== */
+
 .rsc-nav-chevron {
     font-size: 0.7em;
     margin-left: 8px;
@@ -175,7 +184,10 @@ body {
     transform: rotate(180deg);
 }
 
-/* Mobile Toggle */
+/* =================================== */
+/* MOBILE TOGGLE                       */
+/* =================================== */
+
 .rsc-nav-toggle {
     display: none;
     font-size: 24px;
@@ -190,7 +202,10 @@ body {
     background-color: rgba(37, 99, 235, 0.1);
 }
 
-/* ===== ENHANCED HERO SECTION ===== */
+/* =================================== */
+/* HERO SECTION                        */
+/* =================================== */
+
 .hero-section {
     display: flex;
     flex-wrap: wrap;
@@ -210,7 +225,10 @@ body {
     z-index: 2;
 }
 
-/* Hero Badge */
+/* =================================== */
+/* HERO BADGE                          */
+/* =================================== */
+
 .hero-badge {
     display: inline-block;
     background: linear-gradient(135deg, var(--accent) 0%, #fbbf24 100%);
@@ -224,7 +242,10 @@ body {
     box-shadow: var(--shadow);
 }
 
-/* Hero Title */
+/* =================================== */
+/* HERO TITLE                          */
+/* =================================== */
+
 .hero-content h1 {
     font-size: 2.5rem;
     font-weight: 800;
@@ -250,7 +271,10 @@ body {
     animation: slideInUp 0.8s ease-out 0.4s both;
 }
 
-/* Hero Description */
+/* =================================== */
+/* HERO DESCRIPTION                    */
+/* =================================== */
+
 .hero-description {
     font-size: 1rem;
     line-height: 1.7;
@@ -260,7 +284,10 @@ body {
     animation: slideInUp 0.8s ease-out 0.6s both;
 }
 
-/* Hero Stats */
+/* =================================== */
+/* HERO STATS                          */
+/* =================================== */
+
 .hero-stats {
     display: flex;
     gap: 2rem;
@@ -285,7 +312,10 @@ body {
     font-weight: 500;
 }
 
-/* Buttons */
+/* =================================== */
+/* BUTTONS                             */
+/* =================================== */
+
 .button-group {
     display: flex;
     gap: 1.25rem;
@@ -329,7 +359,10 @@ body {
     transform: translateY(-3px);
 }
 
-/* Hero Visual Area */
+/* =================================== */
+/* HERO VISUAL AREA                    */
+/* =================================== */
+
 .hero-visual {
     flex: 1;
     min-width: 300px;
@@ -353,7 +386,10 @@ body {
     overflow: hidden;
 }
 
-/* Floating Elements */
+/* =================================== */
+/* FLOATING ELEMENTS                   */
+/* =================================== */
+
 .floating-elements {
     position: absolute;
     top: 0;
@@ -383,7 +419,10 @@ body {
 .floating-element:nth-child(3) { bottom: 30%; left: 15%; animation-delay: 3s; }
 .floating-element:nth-child(4) { bottom: 15%; right: 10%; animation-delay: 4.5s; }
 
-/* Animations */
+/* =================================== */
+/* ANIMATIONS                          */
+/* =================================== */
+
 @keyframes slideInUp {
     from {
         opacity: 0;
@@ -422,7 +461,10 @@ body {
     }
 }
 
-/* Particle Background */
+/* =================================== */
+/* PARTICLE BACKGROUND                 */
+/* =================================== */
+
 .particle-background {
     position: absolute;
     top: 0;
@@ -433,7 +475,10 @@ body {
     pointer-events: none;
 }
 
-/* ===== RESPONSIVE STYLES ===== */
+/* =================================== */
+/* RESPONSIVE STYLES                   */
+/* =================================== */
+
 @media (max-width: 1024px) {
     .rsc-nav-toggle {
         display: block;
@@ -540,20 +585,10 @@ body {
 
 
 
-/*  */
 /* =================================== */
-/* OUR MISSION SECTION
-/* =================================== */
-
-/* --- Utility Classes (Aapke paas pehle se ho sakti hain) --- */
-
-/* =================================== */
-/* OUR MISSION V2 (MODERN)
+/* OUR MISSION SECTION                 */
 /* =================================== */
 
-/* --- Utility Classes (Aapke paas pehle se hongi) --- */
-
-/* Agar aapke paas yeh classes pehle se hain, toh add na karein */
 .rsc-container {
   max-width: 1200px;
   width: 100%;
@@ -562,7 +597,7 @@ body {
 }
 
 .rsc-text-green {
-  color: #4CAF50; /* Aapka main green color */
+  color: #4CAF50;
 }
 
 .rsc-btn {
@@ -589,13 +624,11 @@ body {
   gap: 15px;
 }
 
-/* --- Mission Section Specific Styles --- */
-
 .rsc-mission-v2 {
   padding: 80px 0;
-  background-color: #f9f9f9; /* Light background */
+  background-color: #f9f9f9;
   position: relative;
-  overflow: hidden; /* Particles ko section ke andar rakhega */
+  overflow: hidden;
 }
 
 .rsc-mission-header {
@@ -606,7 +639,7 @@ body {
 .rsc-section-title {
   font-size: 2.5rem;
   font-weight: 800;
-  margin-bottom: 25px; /* Thori space title aur line ke liye */
+  margin-bottom: 25px;
   text-transform: uppercase;
   letter-spacing: 2px;
   position: relative;
@@ -622,7 +655,7 @@ body {
   transform: translateX(-50%);
   width: 120px;
   height: 4px;
-  background: #4CAF50; /* Green underline */
+  background: #4CAF50;
   border-radius: 2px;
 }
 
@@ -641,9 +674,8 @@ body {
   align-items: center;
 }
 
-/* Left Side: Text */
 .rsc-mission-text {
-  background: #ffffff; /* Solid white card */
+  background: #ffffff;
   border-radius: 20px;
   padding: 40px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
@@ -658,14 +690,14 @@ body {
 .rsc-mission-text h3 {
   font-size: 2.2rem;
   margin-bottom: 20px;
-  color: #333; /* Dark text */
+  color: #333;
 }
 
 .rsc-mission-text p {
   font-size: 1.1rem;
   line-height: 1.7;
   margin-bottom: 30px;
-  color: #555; /* Darker gray text */
+  color: #555;
 }
 
 .rsc-mission-features {
@@ -676,7 +708,7 @@ body {
 }
 
 .rsc-feature {
-  background: #f0f0f0; /* Light gray background */
+  background: #f0f0f0;
   color: #333;
   padding: 10px 20px;
   border-radius: 50px;
@@ -693,10 +725,9 @@ body {
 }
 
 .rsc-feature i {
-  color: #4CAF50; /* Green icon */
+  color: #4CAF50;
 }
 
-/* Right Side: Visual */
 .rsc-mission-visual {
   position: relative;
   height: 500px;
@@ -707,7 +738,7 @@ body {
 
 .rsc-floating-card {
   position: absolute;
-  background: #ffffff; /* Solid white card */
+  background: #ffffff;
   border-radius: 15px;
   padding: 25px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -720,7 +751,7 @@ body {
 .rsc-floating-card i {
   font-size: 2.5rem;
   margin-bottom: 15px;
-  color: #4CAF50; /* Green icon */
+  color: #4CAF50;
 }
 
 .rsc-floating-card h3 {
@@ -745,7 +776,10 @@ body {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* Background Particles */
+/* =================================== */
+/* BACKGROUND PARTICLES                */
+/* =================================== */
+
 .rsc-particles {
   position: absolute;
   top: 0;
@@ -758,7 +792,7 @@ body {
 
 .rsc-particle {
   position: absolute;
-  background: rgba(76, 175, 80, 0.15); /* Light green particles */
+  background: rgba(76, 175, 80, 0.15);
   border-radius: 50%;
   animation: rsc-float 15s infinite linear;
 }
@@ -770,7 +804,10 @@ body {
   100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
 }
 
-/* --- Responsive Design --- */
+/* =================================== */
+/* MISSION RESPONSIVE                  */
+/* =================================== */
+
 @media (max-width: 992px) {
   .rsc-mission-content {
     grid-template-columns: 1fr;
@@ -818,12 +855,12 @@ body {
 
 
 /* =================================== */
-/* EXPLORE OUR FACILITIES SECTION
+/* EXPLORE FACILITIES SECTION          */
 /* =================================== */
 
 .rsc-facilities {
   padding: 80px 0;
-  background-color: #ffffff; /* White background */
+  background-color: #ffffff;
   position: relative;
   overflow: hidden;
 }
@@ -833,8 +870,6 @@ body {
   margin-bottom: 50px;
 }
 
-/* Using existing .rsc-section-title class */
-
 .rsc-facility-subtitle {
   font-size: 1.2rem;
   color: #555;
@@ -843,7 +878,6 @@ body {
   margin: 0 auto;
 }
 
-/* Tab Buttons */
 .rsc-facility-tabs {
   display: flex;
   justify-content: center;
@@ -873,7 +907,7 @@ body {
 }
 
 .rsc-tab-btn.rsc-tab-active {
-  background-color: #4CAF50; /* Green active state */
+  background-color: #4CAF50;
   color: #ffffff;
   border-color: #4CAF50;
   box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
@@ -885,24 +919,23 @@ body {
 }
 
 .rsc-tab-btn i {
-  color: #4CAF50; /* Green icon */
+  color: #4CAF50;
   transition: color 0.3s ease;
 }
 
-/* Tab Content Panes */
 .rsc-facility-content {
   position: relative;
-  max-width: 1000px; /* Content ko thora chhota rakhein */
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .rsc-tab-pane {
-  display: none; /* Sabko hide karein */
+  display: none;
   animation: rsc-fadeIn 0.6s ease;
 }
 
 .rsc-tab-pane.rsc-pane-active {
-  display: block; /* Sirf active wale ko show karein */
+  display: block;
 }
 
 @keyframes rsc-fadeIn {
@@ -919,8 +952,8 @@ body {
 
 .rsc-pane-image img {
   width: 100%;
-  height: 350px; /* <-- YEH FIX HAI */
-  object-fit: cover; /* Yeh image ko stretch kiye bina 350px mein fit karega */
+  height: 350px;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -939,14 +972,17 @@ body {
   margin-bottom: 30px;
 }
 
-/* --- Responsive Design --- */
+/* =================================== */
+/* FACILITY RESPONSIVE                 */
+/* =================================== */
+
 @media (max-width: 768px) {
   .rsc-pane-grid {
-    grid-template-columns: 1fr; /* Stack columns on mobile */
+    grid-template-columns: 1fr;
   }
   
   .rsc-pane-image {
-    margin-bottom: 20px; /* Image aur text ke beech space */
+    margin-bottom: 20px;
   }
 
   .rsc-pane-text {
@@ -954,26 +990,26 @@ body {
   }
   
   .rsc-btn {
-    width: 100%; /* Button ko full width karein */
+    width: 100%;
     justify-content: center;
   }
 }
 
 @media (max-width: 480px) {
   .rsc-tab-btn {
-    width: 100%; /* Tab buttons ko full width karein */
+    width: 100%;
     justify-content: center;
   }
 }
 
 
 /* =================================== */
-/* WHY CHOOSE US SECTION
+/* WHY CHOOSE US SECTION               */
 /* =================================== */
 
 .rsc-why-us {
   padding: 80px 0;
-  background-color: #f9f9f9; /* Light gray background */
+  background-color: #f9f9f9;
   position: relative;
 }
 
@@ -981,8 +1017,6 @@ body {
   text-align: center;
   margin-bottom: 50px;
 }
-
-/* We can re-use the .rsc-section-title from other sections */
 
 .rsc-why-subtitle {
   font-size: 1.2rem;
@@ -992,19 +1026,12 @@ body {
   margin: 0 auto;
 }
 
-/* Features Grid */
 .rsc-why-grid {
   display: grid;
-  /* Yeh grid automatically responsive hai:
-    - Desktop par 3 columns
-    - Tablet par 2 columns
-    - Mobile par 1 column
-  */
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
 
-/* Feature Card */
 .rsc-why-card {
   background: #ffffff;
   padding: 40px 30px;
@@ -1020,17 +1047,14 @@ body {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
-/* Icon Styling */
 .rsc-why-icon {
   height: 80px;
   width: 80px;
-  background-color: #4CAF50; /* Green theme color */
+  background-color: #4CAF50;
   color: #ffffff;
   border-radius: 50%;
   font-size: 2.5rem;
-  margin: 0 auto 25px auto; /* Center karega */
-  
-  /* Icon ko circle ke beech mein laane ke liye */
+  margin: 0 auto 25px auto;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1052,15 +1076,15 @@ body {
 
 
 /* =================================== */
-/* HERO CAROUSEL SECTION
+/* HERO CAROUSEL SECTION               */
 /* =================================== */
 
 .rsc-hero-carousel {
     position: relative;
-    height: 90vh; /* 90% screen height */
+    height: 90vh;
     width: 100%;
     overflow: hidden;
-    background-color: #333; /* Fallback agar image load na ho */
+    background-color: #333;
 }
 
 .rsc-hero-slide {
@@ -1073,14 +1097,12 @@ body {
     background-position: center;
     opacity: 0;
     transition: opacity 1.5s ease-in-out;
-    /* Zoom effect */
     transform: scale(1.15); 
 }
 
 .rsc-hero-slide.rsc-slide-active {
     opacity: 1;
-    transform: scale(1); /* Active slide par zoom in animation */
-    /* 6s JS ke interval se match karta hai */
+    transform: scale(1);
     transition: opacity 1.5s ease-in-out, transform 6s linear; 
 }
 
@@ -1090,7 +1112,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Halki dark overlay */
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
@@ -1127,14 +1149,12 @@ body {
     animation: rsc-fadeInUp 1s ease 1s forwards;
 }
 
-/* Yeh button ko bhi animate karega */
 .rsc-hero-btn {
     opacity: 0;
     transform: translateY(20px);
     animation: rsc-fadeInUp 1s ease 1.5s forwards;
 }
 
-/* Text animation */
 @keyframes rsc-fadeInUp {
     to {
         opacity: 1;
@@ -1142,7 +1162,6 @@ body {
     }
 }
 
-/* Progress Bars */
 .rsc-hero-progress-container {
     position: absolute;
     bottom: 30px;
@@ -1154,7 +1173,7 @@ body {
 }
 
 .rsc-hero-progress {
-    width: 100px; /* Har bar ki width */
+    width: 100px;
     height: 4px;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 2px;
@@ -1164,17 +1183,18 @@ body {
 .rsc-hero-progress-inner {
     width: 0%;
     height: 100%;
-    background-color: #4CAF50; /* Green theme color */
+    background-color: #4CAF50;
 }
 
-/* Yeh class JS se add hogi */
 .rsc-progress-active .rsc-hero-progress-inner {
     width: 100%;
-    /* Yeh animation JS ke interval se match karna chahiye */
     transition: width 6s linear; 
 }
 
-/* --- Responsive (Mobile View) --- */
+/* =================================== */
+/* HERO CAROUSEL RESPONSIVE            */
+/* =================================== */
+
 @media (max-width: 768px) {
     .rsc-hero-title {
         font-size: 2.5rem;
@@ -1183,17 +1203,17 @@ body {
         font-size: 1.1rem;
     }
     .rsc-hero-progress {
-        width: 60px; /* Mobile par bars chhotay karein */
+        width: 60px;
     }
 }
 
 /* =================================== */
-/* SAFETY & SECURITY SECTION
+/* SAFETY & SECURITY SECTION           */
 /* =================================== */
 
 .rsc-safety {
   padding: 80px 0;
-  background-color: #ffffff; /* White background */
+  background-color: #ffffff;
   position: relative;
 }
 
@@ -1202,22 +1222,17 @@ body {
   margin-bottom: 50px;
 }
 
-/* Re-using .rsc-section-title */
-
 .rsc-safety-subtitle {
   font-size: 1.2rem;
   color: #555;
   opacity: 0.9;
-  max-width: 700px; /* Thora zyada text ke liye */
+  max-width: 700px;
   margin: 0 auto;
 }
 
-/* Policy List */
 .rsc-policy-list {
-  max-width: 900px; /* List ko center mein rakhein */
+  max-width: 900px;
   margin: 0 auto;
-  
-  /* Har item ke beech space */
   display: flex;
   flex-direction: column;
   gap: 30px; 
@@ -1225,9 +1240,9 @@ body {
 
 .rsc-policy-item {
   display: flex;
-  align-items: flex-start; /* Icon aur text ko top se align karein */
+  align-items: flex-start;
   gap: 25px;
-  background: #f9f9f9; /* Har item ke liye halka background */
+  background: #f9f9f9;
   padding: 25px;
   border-radius: 10px;
   border: 1px solid #eee;
@@ -1240,15 +1255,13 @@ body {
 }
 
 .rsc-policy-icon {
-  flex-shrink: 0; /* Icon ko shrink na hone dein */
+  flex-shrink: 0;
   height: 60px;
   width: 60px;
-  background-color: #4CAF50; /* Green theme color */
+  background-color: #4CAF50;
   color: #ffffff;
   border-radius: 50%;
   font-size: 1.8rem;
-  
-  /* Icon ko circle ke beech mein laane ke liye */
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1267,10 +1280,13 @@ body {
   color: #555;
 }
 
-/* --- Responsive (Mobile View) --- */
+/* =================================== */
+/* SAFETY RESPONSIVE                   */
+/* =================================== */
+
 @media (max-width: 576px) {
   .rsc-policy-item {
-    flex-direction: column; /* Icon ko text ke upar le aayein */
+    flex-direction: column;
     align-items: center;
     text-align: center;
   }
@@ -1279,12 +1295,12 @@ body {
 
 
 /* =================================== */
-/* TESTIMONIALS SECTION
+/* TESTIMONIALS SECTION                */
 /* =================================== */
 
 .rsc-testimonials {
   padding: 80px 0;
-  background-color: #ffffff; /* White background */
+  background-color: #ffffff;
 }
 
 .rsc-testimonials-header {
@@ -1301,19 +1317,19 @@ body {
 }
 
 .rsc-testimonial-slider {
-  max-width: 800px; /* Slider ki width */
+  max-width: 800px;
   margin: 0 auto;
   position: relative;
-  overflow: hidden; /* Important for animation */
-  padding: 40px; /* Content ke liye padding */
+  overflow: hidden;
+  padding: 40px;
   background: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .rsc-testimonial-track {
-  position: relative; /* Items ko absolute position karne ke liye */
-  height: 250px; /* Track ki fixed height */
+  position: relative;
+  height: 250px;
 }
 
 .rsc-testimonial-item {
@@ -1324,19 +1340,19 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
-  transform: translateX(100%); /* Right se aane ke liye */
+  transform: translateX(100%);
 }
 
 .rsc-testimonial-item.rsc-testi-active {
   opacity: 1;
   visibility: visible;
-  transform: translateX(0); /* Center mein laane ke liye */
+  transform: translateX(0);
 }
 
 .rsc-testimonial-item.rsc-testi-leaving {
   opacity: 0;
   visibility: hidden;
-  transform: translateX(-100%); /* Left se nikalne ke liye */
+  transform: translateX(-100%);
 }
 
 .rsc-testimonial-content {
@@ -1346,7 +1362,7 @@ body {
 
 .rsc-quote-icon {
   font-size: 3rem;
-  color: #4CAF50; /* Green accent */
+  color: #4CAF50;
   margin-bottom: 20px;
 }
 
@@ -1359,7 +1375,7 @@ body {
 }
 
 .rsc-testimonial-rating {
-  color: #FFD700; /* Gold color for stars */
+  color: #FFD700;
   font-size: 1.1rem;
   margin-bottom: 10px;
 }
@@ -1419,7 +1435,7 @@ body {
   width: 0%;
   height: 100%;
   background-color: #4CAF50;
-  transition: width 0s linear; /* JS will control this */
+  transition: width 0s linear;
 }
 
 /* --- Responsive --- */
@@ -1440,12 +1456,12 @@ body {
 
 
 /* =================================== */
-/* FAQ SECTION
+/* FAQ SECTION                         */
 /* =================================== */
 
 .rsc-faq {
   padding: 80px 0;
-  background-color: #f9f9f9; /* Light gray background */
+  background-color: #f9f9f9;
 }
 
 .rsc-faq-header {
@@ -1461,24 +1477,22 @@ body {
   margin: 0 auto;
 }
 
-/* Accordion Container */
 .rsc-faq-container {
-  max-width: 800px; /* List ko center mein rakhein */
+  max-width: 800px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 15px; /* Har item ke beech space */
+  gap: 15px;
 }
 
 .rsc-faq-item {
   background: #ffffff;
   border: 1px solid #eee;
   border-radius: 10px;
-  overflow: hidden; /* Yeh zaroori hai animation ke liye */
+  overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
-/* Question Button */
 .rsc-faq-question {
   width: 100%;
   background: #ffffff;
@@ -1504,15 +1518,14 @@ body {
 
 .rsc-faq-icon {
   font-size: 1.1rem;
-  color: #4CAF50; /* Green icon */
+  color: #4CAF50;
   transition: transform 0.3s ease;
 }
 
-/* Answer Panel */
 .rsc-faq-answer {
-  max-height: 0; /* Yeh answer ko chhupa dega */
+  max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-out; /* Smooth animation */
+  transition: max-height 0.4s ease-out;
 }
 
 .rsc-faq-answer p {
@@ -1528,11 +1541,11 @@ body {
 }
 
 .rsc-faq-item.rsc-faq-active .rsc-faq-icon {
-  transform: rotate(180deg); /* Icon ko ghuma dein */
+  transform: rotate(180deg);
 }
 
 .rsc-faq-item.rsc-faq-active .rsc-faq-answer {
-  max-height: 500px; /* Answer ko dikhane ke liye max-height set karein */
+  max-height: 500px;
 }
 
 
@@ -1545,7 +1558,9 @@ body {
 /* ATHLETES PAGE STYLES (THEME-ALIGNED)
 /* =================================== */
 
-/* ===== ATHLETES HERO SECTION ===== */
+/* =================================== */
+/* ATHLETES HERO SECTION               */
+/* =================================== */
 .rsc-athletes-hero {
     padding: 100px 0 60px;
     background: linear-gradient(135deg, var(--light) 0%, #ffffff 100%);
@@ -1582,7 +1597,9 @@ body {
     margin: 0 auto 2rem;
 }
 
-/* ===== ATHLETES FILTER SECTION ===== */
+/* =================================== */
+/* ATHLETES FILTER SECTION             */
+/* =================================== */
 .rsc-athletes-filter {
     padding: 40px 0;
     background-color: var(--light);
@@ -1628,7 +1645,9 @@ body {
     border-color: var(--primary);
 }
 
-/* ===== ATHLETES GRID SECTION ===== */
+/* =================================== */
+/* ATHLETES GRID SECTION               */
+/* =================================== */
 .rsc-athletes-grid-section {
     padding: 80px 0;
     background-color: #ffffff;
@@ -1750,7 +1769,9 @@ body {
     color: var(--gray);
 }
 
-/* ===== ACHIEVEMENTS SECTION ===== */
+/* =================================== */
+/* ACHIEVEMENTS SECTION                */
+/* =================================== */
 .rsc-athletes-achievements {
     padding: 80px 0;
     background-color: var(--light);
@@ -1822,7 +1843,9 @@ body {
     font-weight: 600;
 }
 
-/* ===== TRAINING PROGRAMS SECTION ===== */
+/* =================================== */
+/* TRAINING PROGRAMS SECTION           */
+/* =================================== */
 .rsc-training-programs {
     padding: 80px 0;
     background-color: #ffffff;
@@ -1927,7 +1950,9 @@ body {
     background: var(--primary-dark);
 }
 
-/* ===== RESPONSIVE STYLES ===== */
+/* =================================== */
+/* GALLERY RESPONSIVE                  */
+/* =================================== */
 @media (max-width: 1024px) {
     .rsc-athletes-grid {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1994,7 +2019,9 @@ body {
 
 /* Aapke main :root variables ka istemal karega */
 
-/* ===== GALLERY HERO SECTION ===== */
+/* =================================== */
+/* GALLERY HERO SECTION                */
+/* =================================== */
 .rsc-gallery-hero {
     padding: 100px 0 60px;
     background: linear-gradient(135deg, var(--light) 0%, #e0f2fe 100%);
@@ -2031,7 +2058,9 @@ body {
     margin: 0 auto 2rem;
 }
 
-/* ===== GALLERY FILTER SECTION ===== */
+/* =================================== */
+/* GALLERY FILTER SECTION              */
+/* =================================== */
 .rsc-gallery-section {
     padding: 80px 0;
     background-color: var(--light);
@@ -2081,7 +2110,9 @@ body {
     box-shadow: var(--shadow);
 }
 
-/* ===== PINTEREST MASONRY GRID ===== */
+/* =================================== */
+/* PINTEREST MASONRY GRID              */
+/* =================================== */
 .rsc-gallery-masonry {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -2231,7 +2262,9 @@ body {
     transform: scale(1.05);
 }
 
-/* ===== LOAD MORE BUTTON ===== */
+/* =================================== */
+/* LOAD MORE BUTTON                    */
+/* =================================== */
 .rsc-gallery-load-more {
     text-align: center;
     margin-top: 40px;
@@ -2259,7 +2292,9 @@ body {
     box-shadow: var(--shadow-lg);
 }
 
-/* ===== ENHANCED LIGHTBOX STYLES ===== */
+/* =================================== */
+/* ENHANCED LIGHTBOX STYLES            */
+/* =================================== */
 .rsc-lightbox {
     display: none;
     position: fixed;
@@ -2383,7 +2418,9 @@ body {
     transform: scale(1.1);
 }
 
-/* ===== ANIMATIONS ===== */
+/* =================================== */
+/* ANIMATIONS                          */
+/* =================================== */
 @keyframes rsc-zoomIn {
     from {
         opacity: 0;
@@ -2395,7 +2432,9 @@ body {
     }
 }
 
-/* ===== RESPONSIVE STYLES ===== */
+/* =================================== */
+/* GALLERY RESPONSIVE                  */
+/* =================================== */
 @media (max-width: 768px) {
     .rsc-gallery-hero-title {
         font-size: 2.5rem;
@@ -2463,14 +2502,9 @@ body {
 }
 
 /* =================================== */
-/* FEEDBACK PAGE STYLES
+/* FEEDBACK PAGE STYLES                */
 /* =================================== */
 
-/* =================================== */
-/* FEEDBACK PAGE STYLES - FIXED RESPONSIVE
-/* =================================== */
-
-/* Reset for horizontal scroll issue */
 html, body {
     overflow-x: hidden;
     width: 100%;
@@ -2482,7 +2516,6 @@ html, body {
     max-width: 100%;
 }
 
-/* Feedback Hero Section */
 .rsc-feedback-hero {
     padding: 100px 0 60px;
     background: linear-gradient(135deg, var(--light) 0%, #e0f2fe 100%);
@@ -3017,7 +3050,9 @@ html, body {
     transform: scale(1.2);
 }
 
-/* ===== RESPONSIVE FIXES ===== */
+/* =================================== */
+/* RESPONSIVE FIXES                    */
+/* =================================== */
 @media (max-width: 768px) {
     .rsc-feedback-hero-title {
         font-size: 2.5rem;
@@ -3039,7 +3074,7 @@ html, body {
         padding: 0 15px;
     }
     
-    /* Mobile specific fixes */
+   
     .rsc-feedback-form-title {
         font-size: 1.8rem;
     }
@@ -3080,7 +3115,7 @@ html, body {
         padding: 0 10px;
     }
     
-    /* Extra mobile fixes */
+   
     .rsc-feedback-submit-btn {
         font-size: 1rem;
         padding: 12px 15px;
@@ -3120,7 +3155,7 @@ html, body {
 
 
 /* =================================== */
-/* INDOOR SPORTS PAGE - ENHANCED
+/* INDOOR SPORTS PAGE                  */
 /* =================================== */
 
 .rsc-indoor-container {
@@ -3130,7 +3165,6 @@ html, body {
     padding: 0 20px;
 }
 
-/* Hero Section */
 .rsc-indoor-hero {
     padding: 100px 0 60px;
     background: linear-gradient(135deg, var(--light) 0%, #e0f2fe 100%);
@@ -3522,7 +3556,9 @@ html, body {
     font-size: 1.1rem;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
+/* =================================== */
+/* RESPONSIVE DESIGN                   */
+/* =================================== */
 @media (max-width: 992px) {
     .rsc-sport-card {
         grid-template-columns: 1fr;
@@ -3608,7 +3644,7 @@ html, body {
 
 
 /* =================================== */
-/* OUTDOOR SPORTS PAGE - FIXED IMAGES
+/* OUTDOOR SPORTS PAGE                 */
 /* =================================== */
 
 .rsc-outdoor-container {
@@ -3618,7 +3654,6 @@ html, body {
     padding: 0 20px;
 }
 
-/* Hero Section */
 .rsc-outdoor-hero {
     padding: 100px 0 60px;
     background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
@@ -3764,15 +3799,15 @@ html, body {
 .rsc-sport-card-image {
     position: relative;
     overflow: hidden;
-    min-height: 400px; /* Fixed height */
-    max-height: 400px; /* Prevent oversized images */
+    min-height: 400px;
+    max-height: 400px;
 }
 
 .rsc-sport-card-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures proper cropping */
-    object-position: center; /* Centers the image */
+    object-fit: cover;
+    object-position: center;
     display: block;
     transition: transform 0.4s ease;
 }
@@ -4015,7 +4050,9 @@ html, body {
     font-size: 1.1rem;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
+/* =================================== */
+/* RESPONSIVE DESIGN                   */
+/* =================================== */
 @media (max-width: 992px) {
     .rsc-sport-card {
         grid-template-columns: 1fr;
@@ -4026,7 +4063,7 @@ html, body {
         direction: ltr;
     }
     
-    /* Mobile image sizing */
+   
     .rsc-sport-card-image {
         min-height: 300px;
         max-height: 300px;
@@ -4081,7 +4118,7 @@ html, body {
         font-size: 2rem;
     }
     
-    /* Smaller images on mobile */
+   
     .rsc-sport-card-image {
         min-height: 250px;
         max-height: 250px;
@@ -4106,7 +4143,7 @@ html, body {
         grid-template-columns: 1fr;
     }
     
-    /* Extra small mobile images */
+   
     .rsc-sport-card-image {
         min-height: 200px;
         max-height: 200px;
@@ -4394,18 +4431,9 @@ html, body {
 }
 
 /* =================================== */
-/* MEMBERSHIP PAGE STYLES
+/* MEMBERSHIP PAGE STYLES              */
 /* =================================== */
 
-/* .rsc-page-header, .rsc-section-title-center, .rsc-faq, .rsc-btn 
-   yeh sab pehle se defined hain aur re-use ho rahe hain */
-
-/* ===== PRICING GRID SECTION ===== */
-/* =================================== */
-/* MEMBERSHIP APPLICATION PAGE STYLES
-/* =================================== */
-
-/* Hero Section */
 .rsc-membership-hero {
     padding: 100px 0 60px;
     background: linear-gradient(135deg, var(--light) 0%, #e0f2fe 100%);
@@ -4432,7 +4460,6 @@ html, body {
     line-height: 1.6;
 }
 
-/* Application Process Steps */
 .rsc-application-process {
     padding: 60px 0;
     background: var(--light);
@@ -4535,7 +4562,7 @@ html, body {
 }
 .rsc-form-step.active {
     display: block;
-    animation: rsc-fadeIn 0.5s ease; /* Animation */
+    animation: rsc-fadeIn 0.5s ease;
 }
 @keyframes rsc-fadeIn {
     from { opacity: 0; transform: translateY(10px); }
@@ -4719,25 +4746,25 @@ html, body {
 .rsc-checkbox-option {
     display: flex;
     align-items: center;
-    gap: 10px; /* Gap badhaya */
+    gap: 10px;
     cursor: pointer;
     font-size: 1rem;
     color: var(--dark-light);
 }
 .rsc-radio-option input,
 .rsc-checkbox-option input {
-    display: none; /* Asli checkbox/radio ko chhupayein */
+    display: none;
 }
 .rsc-radio-custom,
 .rsc-checkbox-custom {
-    width: 20px; /* Size badhaya */
+    width: 20px;
     height: 20px;
     border: 2px solid var(--gray);
     border-radius: 50%;
     display: inline-block;
     position: relative;
     transition: var(--transition);
-    flex-shrink: 0; /* Shrink hone se rokein */
+    flex-shrink: 0;
 }
 .rsc-checkbox-custom {
     border-radius: 4px;
@@ -4747,7 +4774,7 @@ html, body {
 }
 .rsc-radio-option input:checked + .rsc-radio-custom::after {
     content: '';
-    width: 10px; /* Size badhaya */
+    width: 10px;
     height: 10px;
     background: var(--primary);
     border-radius: 50%;
@@ -4763,7 +4790,7 @@ html, body {
 .rsc-checkbox-option input:checked + .rsc-checkbox-custom::after {
     content: '✓';
     color: white;
-    font-size: 14px; /* Size badhaya */
+    font-size: 14px;
     font-weight: 700;
     position: absolute;
     top: 50%;
@@ -4790,7 +4817,7 @@ html, body {
 }
 .rsc-review-item {
     display: flex;
-    flex-direction: column; /* FIX: Stack karein */
+    flex-direction: column;
     padding: 10px 0;
     border-bottom: 1px dashed var(--gray-light);
 }
@@ -4839,7 +4866,7 @@ html, body {
 .rsc-btn {
     display: inline-flex;
     align-items: center;
-    justify-content: center; /* Center karein */
+    justify-content: center;
     gap: 8px;
     padding: 12px 25px;
     border: none;
@@ -4950,17 +4977,17 @@ html, body {
 @media (max-width: 768px) {
     .rsc-application-steps {
         flex-direction: column;
-        gap: 20px; /* Gap kam kiya */
+        gap: 20px;
     }
     .rsc-application-step {
         flex-direction: row;
         text-align: left;
-        gap: 15px; /* Gap add kiya */
+        gap: 15px;
     }
     .rsc-step-indicator {
         flex-direction: row;
         margin-bottom: 0;
-        margin-right: 0; /* Margin hataya */
+        margin-right: 0;
     }
     .rsc-step-line {
         width: 30px;
@@ -4977,7 +5004,7 @@ html, body {
         grid-template-columns: 1fr;
     }
     .rsc-form-actions {
-        flex-direction: column-reverse; /* Next ko upar rakhein */
+        flex-direction: column-reverse;
         gap: 15px;
     }
     .rsc-btn {
@@ -5004,13 +5031,15 @@ html, body {
     .rsc-checkbox-group {
         flex-direction: column;
         gap: 15px;
-        align-items: flex-start; /* Left align */
+        align-items: flex-start;
     }
 }
 
 
 
-/* ===== MEMBERSHIP APPLICATION STYLES ===== */
+/* =================================== */
+/* MEMBERSHIP APPLICATION STYLES       */
+/* =================================== */
 
 /* Application Process Steps */
 .rsc-application-process {
@@ -5788,12 +5817,9 @@ html, body {
 
 
 /* =================================== */
-/* EVENTS PAGE STYLES
+/* EVENTS PAGE STYLES                  */
 /* =================================== */
 
-/* .rsc-page-header, .rsc-container, .rsc-btn, etc. pehle se defined hain */
-
-/* ===== FEATURED EVENT SECTION ===== */
 .rsc-event-featured {
     padding: 80px 0;
     background-color: var(--light);
@@ -5801,7 +5827,7 @@ html, body {
 
 .rsc-event-featured-card {
     display: grid;
-    grid-template-columns: 1.2fr 1fr; /* Image ko zyada space */
+    grid-template-columns: 1.2fr 1fr;
     align-items: center;
     gap: 50px;
     background: #ffffff;
@@ -5831,7 +5857,6 @@ html, body {
     padding: 40px;
 }
 
-/* Re-using spotlight styles */
 .rsc-event-featured-content .rsc-spotlight-name {
     font-size: 2.5rem;
     color: var(--primary);
@@ -5879,7 +5904,9 @@ html, body {
     margin-top: 5px;
 }
 
-/* ===== EVENT LIST SECTION ===== */
+/* =================================== */
+/* EVENT LIST SECTION                  */
+/* =================================== */
 .rsc-event-list-section {
     padding: 80px 0;
     background-color: #ffffff;
@@ -5905,7 +5932,7 @@ html, body {
     border: 1px solid var(--gray-light);
     transition: var(--transition);
     
-    /* JS Filter animation ke liye */
+   
     opacity: 1;
     transform: translateY(0);
     display: flex;
@@ -5987,13 +6014,15 @@ html, body {
 }
 
 
-/* ===== RESPONSIVE ===== */
+/* =================================== */
+/* RESPONSIVE                          */
+/* =================================== */
 @media (max-width: 992px) {
     .rsc-event-featured-card {
-        grid-template-columns: 1fr; /* Stack */
+        grid-template-columns: 1fr;
     }
     .rsc-event-featured-image {
-        height: 350px; /* Chhoti height */
+        height: 350px;
         min-height: auto;
     }
     .rsc-countdown-timer {
@@ -6021,11 +6050,8 @@ html, body {
 
 
 /* =================================== */
-/* CONTACT PAGE STYLES
+/* CONTACT PAGE STYLES                 */
 /* =================================== */
-
-/* .rsc-page-header, .rsc-feedback-card, .rsc-form-group, etc. 
-   yeh sab pehle se defined hain aur re-use ho rahe hain */
 
 .rsc-contact-section {
     padding: 80px 0;
@@ -6034,7 +6060,6 @@ html, body {
 
 .rsc-contact-grid {
     display: grid;
-    /* Form ko 60% aur Info ko 40% space dein */
     grid-template-columns: 3fr 2fr; 
     gap: 40px;
 }
@@ -6097,21 +6122,23 @@ html, body {
     border: 0;
 }
 
-/* ===== RESPONSIVE ===== */
+/* =================================== */
+/* RESPONSIVE                          */
+/* =================================== */
 @media (max-width: 992px) {
     .rsc-contact-grid {
-        grid-template-columns: 1fr; /* Mobile par stack karein */
+        grid-template-columns: 1fr;
     }
 }
 
 
 /* =================================== */
-/* FOOTER STYLES (UNIQUE & LIGHT THEME)
+/* FOOTER STYLES                       */
 /* =================================== */
 
 .rsc-main-footer {
-    background: var(--light); /* LIGHT THEME */
-    color: var(--gray); /* Dark text */
+    background: var(--light);
+    color: var(--gray);
     margin-top: auto;
     border-top: 1px solid var(--gray-light);
 }
@@ -6124,7 +6151,6 @@ html, body {
     border-bottom: 1px solid var(--gray-light);
 }
 
-/* Brand Section */
 .rsc-main-footer-brand {
     display: flex;
     flex-direction: column;
@@ -6155,7 +6181,7 @@ html, body {
 .rsc-main-footer-logo-text {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--dark); /* LIGHT THEME */
+    color: var(--dark);
 }
 
 .rsc-main-footer-logo-text-green {
@@ -6178,12 +6204,12 @@ html, body {
 .rsc-main-footer-social-link {
     width: 40px;
     height: 40px;
-    background: var(--gray-light); /* LIGHT THEME */
+    background: var(--gray-light);
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--dark-light); /* LIGHT THEME */
+    color: var(--dark-light);
     text-decoration: none;
     transition: var(--transition);
     border: 1px solid var(--gray-light);
@@ -6206,7 +6232,7 @@ html, body {
 .rsc-main-footer-title {
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--dark); /* LIGHT THEME */
+    color: var(--dark);
     margin-bottom: 10px;
     position: relative;
 }
@@ -6279,7 +6305,7 @@ html, body {
 
 .rsc-main-footer-contact-item strong {
     font-size: 0.95rem;
-    color: var(--dark); /* LIGHT THEME */
+    color: var(--dark);
     font-weight: 600;
 }
 
@@ -6311,7 +6337,7 @@ html, body {
 .rsc-main-footer-newsletter-title {
     font-size: 1.3rem;
     font-weight: 600;
-    color: var(--dark); /* LIGHT THEME */
+    color: var(--dark);
     margin-bottom: 8px;
 }
 
@@ -6336,8 +6362,8 @@ html, body {
     padding: 12px 16px;
     border: 1px solid var(--gray-light);
     border-radius: var(--radius);
-    background: #ffffff; /* LIGHT THEME */
-    color: var(--dark); /* LIGHT THEME */
+    background: #ffffff;
+    color: var(--dark);
     font-size: 0.95rem;
     transition: var(--transition);
 }
