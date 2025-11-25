@@ -1,7 +1,13 @@
+/* =================================== */
+/* IMPORTS                             */
+/* =================================== */
 import * as THREE from 'https://cdn.skypack.dev/three@0.132.2';
 import { OrbitControls } from 'https://cdn.skypack.dev/three@0.132.2/examples/jsm/controls/OrbitControls.js';
 import { RoundedBoxGeometry } from 'https://cdn.skypack.dev/three@0.132.2/examples/jsm/geometries/RoundedBoxGeometry.js';
 
+/* =================================== */
+/* NAVIGATION                          */
+/* =================================== */
 document.addEventListener("DOMContentLoaded", function() {
     const navToggle = document.getElementById("rscNavToggle");
     const navLinksList = document.getElementById("rscNavLinks");
@@ -78,7 +84,9 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    
+    /* =================================== */
+    /* COUNTER ANIMATION                   */
+    /* =================================== */
     function animateCounters() {
         const counters = document.querySelectorAll('.stat-number');
         
@@ -119,6 +127,9 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.observe(statsSection);
     }
 
+    /* =================================== */
+    /* BUTTON EFFECTS                      */
+    /* =================================== */
     const buttons = document.querySelectorAll('.btn');
     buttons.forEach(button => {
         button.addEventListener('mouseenter', function() {
@@ -132,6 +143,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     createParticleBackground();
 
+    /* =================================== */
+    /* PARALLAX EFFECTS                    */
+    /* =================================== */
     window.addEventListener('scroll', function() {
         const scrolled = window.pageYOffset;
         const floatingElements = document.querySelectorAll('.floating-element');
@@ -143,6 +157,9 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
+    /* =================================== */
+    /* RIPPLE EFFECT                       */
+    /* =================================== */
     const contactBtn = document.querySelector('.btn-primary');
     const tourBtn = document.querySelector('.btn-secondary');
 
@@ -201,6 +218,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+/* =================================== */
+/* PARTICLE BACKGROUND                 */
+/* =================================== */
 function createParticleBackground() {
     const heroSection = document.querySelector('.hero-section');
     if (!heroSection) return;
@@ -264,7 +284,9 @@ function createParticleBackground() {
     }
 }
 
-
+/* =================================== */
+/* THREE.JS INITIALIZATION             */
+/* =================================== */
 document.addEventListener('DOMContentLoaded', function() {
     setTimeout(initThreeJS, 100);
 });
@@ -357,6 +379,9 @@ function initThreeJS() {
     }
 }
 
+/* =================================== */
+/* MISSION SECTION PARTICLES           */
+/* =================================== */
 function createMissionParticles() {
   const particlesContainer = document.getElementById('rsc-particles');
   if (!particlesContainer) {
@@ -384,6 +409,9 @@ function createMissionParticles() {
   }
 }
 
+/* =================================== */
+/* MISSION ANIMATIONS                  */
+/* =================================== */
 function initMissionAnimations() {
   const missionText = document.querySelector('.rsc-mission-text');
   const floatingCards = document.querySelectorAll('.rsc-floating-card');
@@ -426,7 +454,9 @@ document.addEventListener('DOMContentLoaded', function() {
   initMissionAnimations();
 });
 
-
+/* =================================== */
+/* FACILITY TABS                       */
+/* =================================== */
 function initFacilityTabs() {
   const tabButtons = document.querySelectorAll('.rsc-tab-btn');
   const tabPanes = document.querySelectorAll('.rsc-tab-pane');
@@ -455,6 +485,9 @@ function initFacilityTabs() {
 
 document.addEventListener('DOMContentLoaded', initFacilityTabs);
 
+/* =================================== */
+/* HERO CAROUSEL                       */
+/* =================================== */
 function initHeroCarousel() {
     const carousel = document.getElementById('rscHeroCarousel');
     if (!carousel) {
@@ -597,7 +630,9 @@ function initTestimonialSlider() {
 
 document.addEventListener('DOMContentLoaded', initTestimonialSlider);
 
-
+/* =================================== */
+/* FAQ ACCORDION                       */
+/* =================================== */
 function initFaqAccordion() {
   const faqItems = document.querySelectorAll('.rsc-faq-item');
 
@@ -622,7 +657,9 @@ function initFaqAccordion() {
 
 document.addEventListener('DOMContentLoaded', initFaqAccordion);
 
-
+/* =================================== */
+/* FOOTER YEAR                         */
+/* =================================== */
 document.addEventListener('DOMContentLoaded', function() {
     const yearSpanRevised = document.getElementById('currentYearRevised');
     if (yearSpanRevised) {
@@ -630,7 +667,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-
+/* =================================== */
+/* ATHLETES PAGE                       */
+/* =================================== */
 function initAthletesPage() {
     const filterButtons = document.querySelectorAll('.rsc-athletes-filter-btn');
     const athleteCards = document.querySelectorAll('.rsc-athlete-card');
@@ -714,7 +753,9 @@ document.addEventListener('DOMContentLoaded', function() {
     initAthletesPage(); 
 });
 
-
+/* =================================== */
+/* GALLERY PAGE                        */
+/* =================================== */
 function initGalleryPage() {
     const filterButtons = document.querySelectorAll('.rsc-gallery-filter-btn');
     const galleryCards = document.querySelectorAll('.rsc-gallery-card');
@@ -850,8 +891,9 @@ document.addEventListener('DOMContentLoaded', function() {
     initGalleryPage();
 });
 
-
-
+/* =================================== */
+/* FEEDBACK PAGE                       */
+/* =================================== */
 function initFeedbackPage() {
     const feedbackForm = document.getElementById('rscFeedbackForm');
     if (!feedbackForm) return;
@@ -943,6 +985,9 @@ function initFeedbackPage() {
 
 
 
+/* =================================== */
+/* TESTIMONIALS SLIDER                 */
+/* =================================== */
 function initTestimonialsSlider() {
     const slider = document.getElementById('rscTestimonialsSlider');
     const slides = document.querySelectorAll('.rsc-testimonial-slide');
@@ -956,8 +1001,6 @@ function initTestimonialsSlider() {
     let slideInterval;
 
     function showSlide(index) {
-        console.log('Showing slide:', index);
-        
         slides.forEach(slide => {
             slide.classList.remove('rsc-testimonial-active', 'rsc-testimonial-prev', 'rsc-testimonial-next');
         });
@@ -977,13 +1020,11 @@ function initTestimonialsSlider() {
 
     function nextSlide() {
         let nextIndex = (currentSlide + 1) % slides.length;
-        console.log('Next slide:', nextIndex);
         showSlide(nextIndex);
     }
 
     function prevSlide() {
         let prevIndex = (currentSlide - 1 + slides.length) % slides.length;
-        console.log('Previous slide:', prevIndex);
         showSlide(prevIndex);
     }
 
@@ -1053,8 +1094,6 @@ function initTestimonialsSlider() {
 
     showSlide(0);
     
-    console.log('Total slides:', slides.length);
-    console.log('Total dots:', dots.length);
 }
 
 
